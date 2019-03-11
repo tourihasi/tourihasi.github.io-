@@ -17,67 +17,170 @@ li {
 a {
   text-decoration: none;
 }
-/*  top-wrapperコート一覧*/
-.top-wrapper{
-  background-image:url(https://prog-8.com/images/html/advanced/top.png);
-  background-size:cover;
-  margin:0 auto;
-  padding-top:180px;
-  padding-bottom:100px;
-  text-align:center;
 
+/* ここからcssを書いていきましょう */
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(https://prog-8.com/images/html/advanced/top.png);
+  background-size: cover;
+  color: white;
+  text-align: center;
 }
 
-
-.container{
-
-  padding:0 15px;
-  color:white;
-
-  width:1170px;
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
-.container h1{
-  opacity:0.7;
-  font-size:45px;
-  font-weight:bold;
-  Letter-spacing:5px;
-
+.top-wrapper h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
 }
 
-.container p{
-  opacity:0.7;
+.top-wrapper p {
+  opacity: 0.7;
+  margin-bottom: 15px;
 }
-
 
 .signup {
   background-color: #239b76;
-  opacity:0.8;
-  margin-top:30px;
-
-  margin-bottom:15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-.facebook{
-  background-color:#3b5998;
-  opacity:0.8;
-  margin-right:10px;
-  margin-top:15px;
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
 }
 
-.twitter{
-  background-color:#55acee;
-  opacity:0.8;
-   margin-top:15px;
+.twitter {
+  background-color: #55acee;
 }
 
-.btn{
-  color:white;
-  padding:8px 24px;
-  border-radius: 4px;
+.btn {
+  padding: 8px 24px;
+  color: white;
   display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
 }
 
-.btn:hover{
-  opacity:1;
+.btn:hover {
+  opacity: 1;
 }
+
+.fa {
+  margin-right: 5px;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 124px;
+  margin-top: 20px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.5s;
+}
+
+.header-right:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+}
+
+.lesson-wrapper {
+  height: 580px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-weight: normal;
+}
+
+.lesson{
+  float: left;
+  width: 25%;
+}
+
+.lesson-icon {
+  position: relative;
+}
+
+.lesson-icon p {
+  position: absolute;
+  top: 44%;
+  width: 100%;
+  color: white;
+}
+
+.text-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #b3aeb5;
+}
+
+/*message */
+.message-wrapper{
+  padding-bottom:80px;
+  text-align:center;
+}
+
+
+.message{
+  padding:15px 40px;
+  cursor:pointer;
+  
+  box-shadow:0px 7px #1a7940;
+  background-color:#5dca88;
+}
+
+.messsage:active{
+  position:relative;
+  top:7px;
+  box-shadow:none;
+}
+
+/*footer */
+footer{
+  padding:30px;
+  border-top:1px solid #eee;
+  color:#b3aeb5;
+  float:left;
+}
+
+.footer-logo{
+  width:124px;
+}
+
+
