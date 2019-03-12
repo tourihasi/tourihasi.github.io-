@@ -1,98 +1,171 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>Progate</title>
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <!-- ここでFont Awesomeを読み込んでください -->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-</head>
-<body>
-  <!--header -->
-  <header>
-    <div class="container">
-      <div class="header-left">
-        <img class ="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
-      </div>
-      
-      <div class="header-right">
-        <a href="#" class="login">ログイン</a>
-      </div>
-    </div>
-  </header>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="Description" content="株式会社ブレインのホームページにお越しいただき、誠に有難うございます。ブレインは東京を中心に関東一円で、土木建築工事事業・塗装工事事業を展開しております。創業以来、公共工事・民間工事問わず、多くの現場を経験してきました。これからも地域の発展に貢献するためには、「今自分たちが何をすればいいのか」を考え、行動し、会社として、人として成長し続けて参ります。">
+<meta name="Keywords" content="株式会社ブレイン,東京,中央区,土木建築工事,塗装工事,道路工事,橋梁工事,河川工事,護岸工事,関東">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>株式会社ブレイン 東京 中央区 土木建築工事 塗装工事 道路工事 橋梁工事 河川工事 護岸工事 関東</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/main-first.css">
+<!-- selected colorset navy,emerald,green,purple-->
+<link rel="stylesheet" href="css/colorset-navy.css">
+<!-- additional and setup css -->
+<link rel="stylesheet" href="css/add.css">
+<link rel="stylesheet" href="css/setup.css">
+<!-- fatNav css -->
+<!--<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/jquery.fatNav.min.css"> -->
+<!-- Font Awesome -->
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- jQuery library (served from Google) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/functions.js"></script>
+<script src="js/jquery.smoothScroll.js"></script>
+<script src="js/jquery.matchHeight.js"></script>
+<!-- Google Map -->
+<script src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript" src="js/googlemap.js"></script>
+<!-- additional js -->
+<script type="text/javascript" src="js/add.js"></script>
+<!-- fade in -->
+<script type="text/javascript">
+$('head').append();
+function windowFade(){
+	$('body').fadeIn(1000);
+};
 
-  
-  <!--top-wrapper -->
-  <div class="top-wrapper">
-    <div class="container">
-      <h1>LEARN TO CODE.<br>LEARN TO BE CREATIVE.</h1>
-      <p>Progateはオンラインプログラミング学習サービスです。<br />初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
-      
-      <div class="btn-wrapper">
-        <a href="#" class="btn signup">新規登録はこちら</a>
-        <p>or</p>
-        <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookはこちら</a>
-        <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterはこちら</a>
+window.onload = function() {
+	windowFade();
+};
+
+window.onunload = function() {
+	windowFade();
+};
+</script>
+</head>
+<body id="container" class="top">
+<header class="clearfix">
+  <!-- デフォルトロゴ -->
+  <div class="logo"><a href="index.html"><img src="img/common/logo.png" alt="株式会社ブレイン"></a></div>
+  <!-- オリジナルロゴ用 -->
+  <!--
+  <div class="logo2"><a href="index.html"><img src="img/common/logo2.png" alt=""></a></div>
+    -->
+  <nav class="fat-nav">
+    <div class="fat-nav__wrapper">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <!--アイコンバージョン
+        <li class="home"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> </a></li>
+        -->
+        <li><a href="content1.html">土木建築工事</a></li>
+        <li><a href="content2.html">塗装工事</a></li>
+        <li><a href="content3.html">会社案内</a></li>
+        <li class="inq"><a href="inquiry.html">お問い合わせ</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<!-- vis1.ビル vis2.デスク+人の手 -->
+<div class="main-vis-inner">
+  <div class="main-vis vis1">
+    <!--vis1は1行＜例：最適なビジネスソリューションを提供する。＞vis2は2行＜例：お客様のご要望に応えた<br class="pc">最適なご提案。＞vis3、4は2行＜例：“質の高いリーガルサービスを”<br>
+韋駄天法律事務所＞-->
+    <div class="catch">皆様の豊かな生活を陰から支え、<br>
+土木建築を通じ、地域社会の発展に貢献します</div>
+  </div>
+</div>
+<main>
+  <article class="pickup1">
+    <div class="inner">
+      <p>この度は、株式会社ブレインのホームページにお越しいただき、誠に有難うございます。ブレインは東京を中心に関東一円で、土木建築工事事業・塗装工事事業を展開しております。創業以来、公共工事・民間工事問わず、多くの現場を経験してきました。これからも地域の発展に貢献するためには、「今自分たちが何をすればいいのか」を考え、行動し、会社として、人として成長し続けて参ります。</p>
+      <div class="btn"><a href="content3.html">もっと詳しく知る</a></div>
+    </div>
+  </article>
+  <div class="inqset">
+    <div class="inner clearfix">
+      <div class="tel">株式会社ブレインへのお問い合わせ<br class="sp">
+        <span class="number noto500">03-4455-2134</span></div>
+      <!-- フォームへリンクなしの場合は下をコメントアウトしてsetup.cssでレイアウト変更-->
+      <!--<div class="form btn"><a href="inquiry.html">お問い合わせフォーム</a></div> -->
+    </div>
+  </div>
+  <div class="pickupsecInner clearfix">
+    <article class="pickup2">
+      <!-- Font Awesome web Icons http://fontawesome.io/icons/ -->
+      <h1><i class="fa fa-home" aria-hidden="true"></i> 生活基盤を支える</h1>
+      <p class="match-h">土木建築とは、交通や環境、ライフラインの維持管理など、私たちの生活基盤を支える重要な役割を担っています。皆様が安心して暮らしていける環境を、創造・整備・維持して参ります。工事も安全第一に進めて参ります。</p>
+      <div class="btn"><a href="content1.html">詳しく見る</a></div>
+    </article>
+    <article class="pickup3">
+      <h1><i class="fa fa-home" aria-hidden="true"></i> 塗装工事のプロフェッショナル</h1>
+      <p class="match-h">塗装工事は公共事業以外にも一般家庭の工事も承っております。信頼関係がなければできない公共工事の技術と知識を活用し、一般家庭の&quot;よりよい快適な住環境&quot;を実現いたします。お見積りは無料ですので、お気軽にお問い合わせ下さい。</p>
+      <div class="btn"><a href="content2.html">詳しく見る</a></div>
+    </article>
+  </div>
+  <div class="lower-bar">
+    <div class="inner clearfix">
+      <article class="news">
+        <h1>NEWS</h1>
+        <dl>
+        <dt>2018.07</dt>
+          <dd>ホームページ更新しました。</dd>
+          <dt>2017.08</dt>
+          <dd>お見積りや現地調査は無料ですので、お気軽にご相談ください。</dd>
+          <dt>2017.08</dt>
+          <dd>ホームページ開設いたしました。</dd>
+        </dl>
+      </article>
+      <article class="company_data">
+        <div class="name">株式会社ブレイン</div>
+        <div class="data">
+          <p>〒104-0061<br>
+東京都中央区銀座7丁目13-6 サガミビル 2F</p>
+          <p>営業エリア：関東一円</p>
+          <p><span class="telno">TEL：03-4455-2134</span><span class="faxno"> FAX：03-6869-5332</span></p>
+        </div>
+      </article>
+    </div>
+  </div>
+</main>
+<footer>
+  <div class="inner clearfix">
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <!--アイコンバージョン<li class="home"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>-->
+        <li><a href="content1.html">土木建築工事</a></li>
+        <li><a href="content2.html">塗装工事</a></li>
+        <li><a href="content3.html">会社案内</a></li>
+        <li><a href="inquiry.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <div class="totop"><a href="#container"><img src="img/common/chp_top.png"></a></div>
+  </div>
+  <!-- バナーなし -->
+  <div class="copyright">&copy; <script type="text/javascript">
+myDate = new Date() ;myYear = myDate.getFullYear ();document.write(myYear);
+</script> Idaten Co., Ltd.</div>
+  <!-- バナー入り -->
+  <!--
+  <div class="add-banner clearfix">
+    <div class="inner-add-banner">
+      <div class="copyright">&copy; <script type="text/javascript">
+myDate = new Date() ;myYear = myDate.getFullYear ();document.write(myYear);
+</script> Idaten Co., Ltd.</div>
+      <div class="wrap-banner clearfix">
+        <div class="facebook"><a href="" target="_blank">facebook</a></div>
+        <div class="twitter"><a href="" target="_blank">twitter</a></div>
+        <div class="ameblo"><a href="" target="_blank">ameblo</a></div>
       </div>
     </div>
   </div>
-  
-  <!--lesson-wrapper -->
-    <div class="lesson-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>Learn Where to Get Started!</h2>
-      </div>
-      <div class="lessons">
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/html.png">
-            <p>HTML & CSS</p>
-          </div>
-          <p class="text-contents">ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-            <p>jQuery</p>
-          </div>
-          <p class="text-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/ruby.png">
-            <p>Ruby</p>
-          </div>
-          <p class="text-contents">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/php.png">
-            <p>PHP</p>
-          </div>
-          <p class="text-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
- <!--message -->
- <div class ="message-wrapper">
-   <div class="container">
-     <div class="heading">
-       <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
-       <h3>Let's learn to code, learn to be creative!</h3>
-     </div>
-     <span class="btn message">さっそく開発する</span>
-   </div>
- </div>
-  
-  <footer>
-    <div class="container">
-      <img  class=footer-logo src="https://prog-8.com/images/html/advanced/footer_logo.png">
-      <p>Learn to Code, Learn to be Creative.</p>
-    </div>
-  </footer>
-  
+  -->
+</footer>
+<!-- fatNav -->
+<script type="text/javascript" src="js/jquery.fatNav.min.js"></script>
+<script type="text/javascript" src="js/fatNav.js"></script>
 </body>
 </html>
