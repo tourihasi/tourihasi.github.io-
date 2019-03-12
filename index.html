@@ -1,98 +1,1232 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>tourihasi</title>
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<meta charset="utf-8" />
+<title>index</title>
+<style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(171, 178, 191); overflow: auto; background-color: rgb(40, 44, 52); }
+.markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
+.markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1.2; margin-top: 1.5em; margin-bottom: 0.5em; color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) h1 { font-size: 2.4em; font-weight: 300; }
+.markdown-preview:not([data-use-github-style]) h2 { font-size: 1.8em; font-weight: 400; }
+.markdown-preview:not([data-use-github-style]) h3 { font-size: 1.5em; font-weight: 500; }
+.markdown-preview:not([data-use-github-style]) h4 { font-size: 1.2em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h5 { font-size: 1.1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h6 { font-size: 1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) strong { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) del { color: rgb(124, 135, 156); }
+.markdown-preview:not([data-use-github-style]) a, .markdown-preview:not([data-use-github-style]) a code { color: rgb(82, 139, 255); }
+.markdown-preview:not([data-use-github-style]) img { max-width: 100%; }
+.markdown-preview:not([data-use-github-style]) > p { margin-top: 0px; margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) > ul, .markdown-preview:not([data-use-github-style]) > ol { margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) blockquote { margin: 1.5em 0px; font-size: inherit; color: rgb(124, 135, 156); border-color: rgb(75, 83, 98); border-width: 4px; }
+.markdown-preview:not([data-use-github-style]) hr { margin: 3em 0px; border-top-width: 2px; border-top-style: dashed; border-top-color: rgb(75, 83, 98); background: none; }
+.markdown-preview:not([data-use-github-style]) table { margin: 1.5em 0px; }
+.markdown-preview:not([data-use-github-style]) th { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) th, .markdown-preview:not([data-use-github-style]) td { padding: 0.66em 1em; border: 1px solid rgb(75, 83, 98); }
+.markdown-preview:not([data-use-github-style]) code { color: rgb(255, 255, 255); background-color: rgb(58, 63, 75); }
+.markdown-preview:not([data-use-github-style]) pre.editor-colors { margin: 1.5em 0px; padding: 1em; font-size: 0.92em; border-radius: 3px; background-color: rgb(49, 54, 63); }
+.markdown-preview:not([data-use-github-style]) kbd { color: rgb(255, 255, 255); border-width: 1px 1px 2px; border-style: solid; border-color: rgb(75, 83, 98) rgb(75, 83, 98) rgb(62, 68, 81); background-color: rgb(58, 63, 75); }
+.markdown-preview[data-use-github-style] { font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; line-height: 1.6; word-wrap: break-word; padding: 30px; font-size: 16px; color: rgb(51, 51, 51); overflow: scroll; background-color: rgb(255, 255, 255); }
+.markdown-preview[data-use-github-style] > :first-child { margin-top: 0px !important; }
+.markdown-preview[data-use-github-style] > :last-child { margin-bottom: 0px !important; }
+.markdown-preview[data-use-github-style] a:not([href]) { color: inherit; text-decoration: none; }
+.markdown-preview[data-use-github-style] .absent { color: rgb(204, 0, 0); }
+.markdown-preview[data-use-github-style] .anchor { position: absolute; top: 0px; left: 0px; display: block; padding-right: 6px; padding-left: 30px; margin-left: -30px; }
+.markdown-preview[data-use-github-style] .anchor:focus { outline: none; }
+.markdown-preview[data-use-github-style] h1, .markdown-preview[data-use-github-style] h2, .markdown-preview[data-use-github-style] h3, .markdown-preview[data-use-github-style] h4, .markdown-preview[data-use-github-style] h5, .markdown-preview[data-use-github-style] h6 { position: relative; margin-top: 1em; margin-bottom: 16px; font-weight: bold; line-height: 1.4; }
+.markdown-preview[data-use-github-style] h1 .octicon-link, .markdown-preview[data-use-github-style] h2 .octicon-link, .markdown-preview[data-use-github-style] h3 .octicon-link, .markdown-preview[data-use-github-style] h4 .octicon-link, .markdown-preview[data-use-github-style] h5 .octicon-link, .markdown-preview[data-use-github-style] h6 .octicon-link { display: none; color: rgb(0, 0, 0); vertical-align: middle; }
+.markdown-preview[data-use-github-style] h1:hover .anchor, .markdown-preview[data-use-github-style] h2:hover .anchor, .markdown-preview[data-use-github-style] h3:hover .anchor, .markdown-preview[data-use-github-style] h4:hover .anchor, .markdown-preview[data-use-github-style] h5:hover .anchor, .markdown-preview[data-use-github-style] h6:hover .anchor { padding-left: 8px; margin-left: -30px; text-decoration: none; }
+.markdown-preview[data-use-github-style] h1:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h2:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h3:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h4:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h5:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h6:hover .anchor .octicon-link { display: inline-block; }
+.markdown-preview[data-use-github-style] h1 tt, .markdown-preview[data-use-github-style] h2 tt, .markdown-preview[data-use-github-style] h3 tt, .markdown-preview[data-use-github-style] h4 tt, .markdown-preview[data-use-github-style] h5 tt, .markdown-preview[data-use-github-style] h6 tt, .markdown-preview[data-use-github-style] h1 code, .markdown-preview[data-use-github-style] h2 code, .markdown-preview[data-use-github-style] h3 code, .markdown-preview[data-use-github-style] h4 code, .markdown-preview[data-use-github-style] h5 code, .markdown-preview[data-use-github-style] h6 code { font-size: inherit; }
+.markdown-preview[data-use-github-style] h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h1 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h2 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h3 { font-size: 1.5em; line-height: 1.43; }
+.markdown-preview[data-use-github-style] h3 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h4 { font-size: 1.25em; }
+.markdown-preview[data-use-github-style] h4 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h5 { font-size: 1em; }
+.markdown-preview[data-use-github-style] h5 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] h6 { font-size: 1em; color: rgb(119, 119, 119); }
+.markdown-preview[data-use-github-style] h6 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] p, .markdown-preview[data-use-github-style] blockquote, .markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol, .markdown-preview[data-use-github-style] dl, .markdown-preview[data-use-github-style] table, .markdown-preview[data-use-github-style] pre { margin-top: 0px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] hr { height: 4px; padding: 0px; margin: 16px 0px; border: 0px none; background-color: rgb(231, 231, 231); }
+.markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol { padding-left: 2em; }
+.markdown-preview[data-use-github-style] ul.no-list, .markdown-preview[data-use-github-style] ol.no-list { padding: 0px; list-style-type: none; }
+.markdown-preview[data-use-github-style] ul ul, .markdown-preview[data-use-github-style] ul ol, .markdown-preview[data-use-github-style] ol ol, .markdown-preview[data-use-github-style] ol ul { margin-top: 0px; margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] li > p { margin-top: 16px; }
+.markdown-preview[data-use-github-style] dl { padding: 0px; }
+.markdown-preview[data-use-github-style] dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; }
+.markdown-preview[data-use-github-style] dl dd { padding: 0px 16px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] blockquote { padding: 0px 15px; color: rgb(119, 119, 119); border-left-width: 4px; border-left-style: solid; border-left-color: rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] blockquote > :first-child { margin-top: 0px; }
+.markdown-preview[data-use-github-style] blockquote > :last-child { margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] table { display: block; width: 100%; overflow: auto; word-break: keep-all; }
+.markdown-preview[data-use-github-style] table th { font-weight: bold; }
+.markdown-preview[data-use-github-style] table th, .markdown-preview[data-use-github-style] table td { padding: 6px 13px; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] table tr { border-top-width: 1px; border-top-style: solid; border-top-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255); }
+.markdown-preview[data-use-github-style] table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
+.markdown-preview[data-use-github-style] img { max-width: 100%; box-sizing: border-box; }
+.markdown-preview[data-use-github-style] .emoji { max-width: none; }
+.markdown-preview[data-use-github-style] span.frame { display: block; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.frame > span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0px 0px; overflow: hidden; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] span.frame span img { display: block; float: left; }
+.markdown-preview[data-use-github-style] span.frame span span { display: block; padding: 5px 0px 0px; clear: both; color: rgb(51, 51, 51); }
+.markdown-preview[data-use-github-style] span.align-center { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-center > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-center span img { margin: 0px auto; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-right { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-right > span { display: block; margin: 13px 0px 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] span.align-right span img { margin: 0px; text-align: right; }
+.markdown-preview[data-use-github-style] span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
+.markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; border-radius: 3px; background-color: rgba(0, 0, 0, 0.0392157); }
+.markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: " "; }
+.markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
+.markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
+.markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; border: 0px; background: transparent; }
+.markdown-preview[data-use-github-style] .highlight { margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] .highlight pre, .markdown-preview[data-use-github-style] pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; border-radius: 3px; background-color: rgb(247, 247, 247); }
+.markdown-preview[data-use-github-style] .highlight pre { margin-bottom: 0px; word-break: normal; }
+.markdown-preview[data-use-github-style] pre { word-wrap: normal; }
+.markdown-preview[data-use-github-style] pre code, .markdown-preview[data-use-github-style] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; word-wrap: normal; border: 0px; background-color: transparent; }
+.markdown-preview[data-use-github-style] pre code::before, .markdown-preview[data-use-github-style] pre tt::before, .markdown-preview[data-use-github-style] pre code::after, .markdown-preview[data-use-github-style] pre tt::after { content: normal; }
+.markdown-preview[data-use-github-style] kbd { display: inline-block; padding: 3px 5px; font-size: 11px; line-height: 10px; color: rgb(85, 85, 85); vertical-align: middle; border-style: solid; border-width: 1px; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; background-color: rgb(252, 252, 252); }
+.markdown-preview[data-use-github-style] a { color: rgb(51, 122, 183); }
+.markdown-preview[data-use-github-style] code { color: inherit; }
+.markdown-preview[data-use-github-style] pre.editor-colors { padding: 0.8em 1em; margin-bottom: 1em; font-size: 0.85em; border-radius: 4px; overflow: auto; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors::shadow .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors::shadow .horizontal-scrollbar { visibility: hidden; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors:hover::shadow .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover::shadow .horizontal-scrollbar { visibility: visible; }
+.markdown-preview.markdown-preview { max-width: 900px; margin: 0px auto; padding: 25px; color: black; background-color: white; }
+.markdown-preview.markdown-preview hr { margin: 50px 0px; background-color: transparent; }
+.markdown-preview.markdown-preview hr::after { content: ""; display: block; border-top-style: ridge; }
+.markdown-preview.markdown-preview hr.pb { page-break-after: always; }
+.markdown-preview.markdown-preview hr.pb::after { display: none; }
+.markdown-preview.markdown-preview h1, .markdown-preview.markdown-preview h2, .markdown-preview.markdown-preview h3, .markdown-preview.markdown-preview h4, .markdown-preview.markdown-preview h5 { font-weight: normal; border-color: rgb(102, 102, 102); }
+.markdown-preview.markdown-preview h1 { font-size: 35px; border: none; margin: 30px auto; text-align: center; letter-spacing: 5px; }
+.markdown-preview.markdown-preview h2 { font-size: 26px; letter-spacing: 3px; margin: 50px auto 25px; }
+.markdown-preview.markdown-preview h3 { font-size: 20px; margin-bottom: 10px; }
+.markdown-preview.markdown-preview h4 { font-size: 16px; margin-bottom: 10px; }
+.markdown-preview.markdown-preview p, .markdown-preview.markdown-preview table, .markdown-preview.markdown-preview ul, .markdown-preview.markdown-preview ol, .markdown-preview.markdown-preview dl, .markdown-preview.markdown-preview pre, .markdown-preview.markdown-preview blockquote { margin: 0px 25px 16px; }
+.markdown-preview.markdown-preview p ul, .markdown-preview.markdown-preview table ul, .markdown-preview.markdown-preview ul ul, .markdown-preview.markdown-preview ol ul, .markdown-preview.markdown-preview dl ul, .markdown-preview.markdown-preview pre ul, .markdown-preview.markdown-preview blockquote ul, .markdown-preview.markdown-preview p ol, .markdown-preview.markdown-preview table ol, .markdown-preview.markdown-preview ul ol, .markdown-preview.markdown-preview ol ol, .markdown-preview.markdown-preview dl ol, .markdown-preview.markdown-preview pre ol, .markdown-preview.markdown-preview blockquote ol, .markdown-preview.markdown-preview p dl, .markdown-preview.markdown-preview table dl, .markdown-preview.markdown-preview ul dl, .markdown-preview.markdown-preview ol dl, .markdown-preview.markdown-preview dl dl, .markdown-preview.markdown-preview pre dl, .markdown-preview.markdown-preview blockquote dl { margin-left: 0px; }
+.markdown-preview.markdown-preview img { width: 100%; max-width: 540px; margin: 0px auto; display: block; }
+.markdown-preview.markdown-preview table { border-collapse: collapse; border-spacing: 0px; max-width: 800px; }
+.markdown-preview.markdown-preview table th { text-align: center; border-color: rgb(102, 102, 102); background-color: rgb(238, 238, 238); }
+.markdown-preview.markdown-preview table tr { border-top-color: rgb(102, 102, 102); }
+.markdown-preview.markdown-preview table td { border-color: rgb(102, 102, 102); }
+.markdown-preview.markdown-preview .margin-clear { margin-left: 0px; }
+.markdown-preview.markdown-preview .center { text-align: center; }
+.markdown-preview.markdown-preview .right { text-align: right; }
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+pre.editor-colors,
+.host {
+  background-color: #282c34;
+  color: #abb2bf;
+}
+pre.editor-colors .line.cursor-line,
+.host .line.cursor-line {
+  background-color: rgba(153, 187, 255, 0.04);
+}
+pre.editor-colors .invisible,
+.host .invisible {
+  color: #abb2bf;
+}
+pre.editor-colors .cursor,
+.host .cursor {
+  border-left: 2px solid #528bff;
+}
+pre.editor-colors .selection .region,
+.host .selection .region {
+  background-color: #3e4451;
+}
+pre.editor-colors .bracket-matcher .region,
+.host .bracket-matcher .region {
+  border-bottom: 1px solid #528bff;
+  box-sizing: border-box;
+}
+pre.editor-colors .invisible-character,
+.host .invisible-character {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .indent-guide,
+.host .indent-guide {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .wrap-guide,
+.host .wrap-guide {
+  background-color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .gutter .line-number,
+.host .gutter .line-number {
+  color: #636d83;
+  -webkit-font-smoothing: antialiased;
+}
+pre.editor-colors .gutter .line-number.cursor-line,
+.host .gutter .line-number.cursor-line {
+  color: #abb2bf;
+  background-color: #2c313a;
+}
+pre.editor-colors .gutter .line-number.cursor-line-no-selection,
+.host .gutter .line-number.cursor-line-no-selection {
+  background-color: transparent;
+}
+pre.editor-colors .gutter .line-number .icon-right,
+.host .gutter .line-number .icon-right {
+  color: #abb2bf;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before,
+.host .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before {
+  bottom: -3px;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed::after,
+.host .gutter:not(.git-diff-icon) .line-number.git-line-removed::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 25px;
+  border-bottom: 1px dotted rgba(224, 82, 82, 0.5);
+  pointer-events: none;
+}
+pre.editor-colors .gutter .line-number.folded,
+.host .gutter .line-number.folded,
+pre.editor-colors .gutter .line-number:after,
+.host .gutter .line-number:after,
+pre.editor-colors .fold-marker:after,
+.host .fold-marker:after {
+  color: #abb2bf;
+}
+.comment {
+  color: #5c6370;
+  font-style: italic;
+}
+.comment .markup.link {
+  color: #5c6370;
+}
+.entity.name.type {
+  color: #e5c07b;
+}
+.entity.other.inherited-class {
+  color: #98c379;
+}
+.keyword {
+  color: #c678dd;
+}
+.keyword.control {
+  color: #c678dd;
+}
+.keyword.operator {
+  color: #abb2bf;
+}
+.keyword.other.special-method {
+  color: #61afef;
+}
+.keyword.other.unit {
+  color: #d19a66;
+}
+.storage {
+  color: #c678dd;
+}
+.storage.type.annotation,
+.storage.type.primitive {
+  color: #c678dd;
+}
+.storage.modifier.package,
+.storage.modifier.import {
+  color: #abb2bf;
+}
+.constant {
+  color: #d19a66;
+}
+.constant.variable {
+  color: #d19a66;
+}
+.constant.character.escape {
+  color: #56b6c2;
+}
+.constant.numeric {
+  color: #d19a66;
+}
+.constant.other.color {
+  color: #56b6c2;
+}
+.constant.other.symbol {
+  color: #56b6c2;
+}
+.variable {
+  color: #e06c75;
+}
+.variable.interpolation {
+  color: #be5046;
+}
+.variable.parameter {
+  color: #abb2bf;
+}
+.string {
+  color: #98c379;
+}
+.string.regexp {
+  color: #56b6c2;
+}
+.string.regexp .source.ruby.embedded {
+  color: #e5c07b;
+}
+.string.other.link {
+  color: #e06c75;
+}
+.punctuation.definition.comment {
+  color: #5c6370;
+}
+.punctuation.definition.method-parameters,
+.punctuation.definition.function-parameters,
+.punctuation.definition.parameters,
+.punctuation.definition.separator,
+.punctuation.definition.seperator,
+.punctuation.definition.array {
+  color: #abb2bf;
+}
+.punctuation.definition.heading,
+.punctuation.definition.identity {
+  color: #61afef;
+}
+.punctuation.definition.bold {
+  color: #e5c07b;
+  font-weight: bold;
+}
+.punctuation.definition.italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.punctuation.section.embedded {
+  color: #be5046;
+}
+.punctuation.section.method,
+.punctuation.section.class,
+.punctuation.section.inner-class {
+  color: #abb2bf;
+}
+.support.class {
+  color: #e5c07b;
+}
+.support.type {
+  color: #56b6c2;
+}
+.support.function {
+  color: #56b6c2;
+}
+.support.function.any-method {
+  color: #61afef;
+}
+.entity.name.function {
+  color: #61afef;
+}
+.entity.name.class,
+.entity.name.type.class {
+  color: #e5c07b;
+}
+.entity.name.section {
+  color: #61afef;
+}
+.entity.name.tag {
+  color: #e06c75;
+}
+.entity.other.attribute-name {
+  color: #d19a66;
+}
+.entity.other.attribute-name.id {
+  color: #61afef;
+}
+.meta.class {
+  color: #e5c07b;
+}
+.meta.class.body {
+  color: #abb2bf;
+}
+.meta.method-call,
+.meta.method {
+  color: #abb2bf;
+}
+.meta.definition.variable {
+  color: #e06c75;
+}
+.meta.link {
+  color: #d19a66;
+}
+.meta.require {
+  color: #61afef;
+}
+.meta.selector {
+  color: #c678dd;
+}
+.meta.separator {
+  background-color: #373b41;
+  color: #abb2bf;
+}
+.meta.tag {
+  color: #abb2bf;
+}
+.underline {
+  text-decoration: underline;
+}
+.none {
+  color: #abb2bf;
+}
+.invalid.deprecated {
+  color: #523d14 !important;
+  background-color: #e0c285 !important;
+}
+.invalid.illegal {
+  color: #ffffff !important;
+  background-color: #e05252 !important;
+}
+.markup.bold {
+  color: #d19a66;
+  font-weight: bold;
+}
+.markup.changed {
+  color: #c678dd;
+}
+.markup.deleted {
+  color: #e06c75;
+}
+.markup.italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.markup.heading {
+  color: #e06c75;
+}
+.markup.heading .punctuation.definition.heading {
+  color: #61afef;
+}
+.markup.link {
+  color: #c678dd;
+}
+.markup.inserted {
+  color: #98c379;
+}
+.markup.quote {
+  color: #d19a66;
+}
+.markup.raw {
+  color: #98c379;
+}
+.source.cs .keyword.operator {
+  color: #c678dd;
+}
+.source.css .property-name,
+.source.css .property-value {
+  color: #828997;
+}
+.source.css .property-name.support,
+.source.css .property-value.support {
+  color: #abb2bf;
+}
+.source.gfm .markup {
+  -webkit-font-smoothing: auto;
+}
+.source.gfm .link .entity {
+  color: #61afef;
+}
+.source.ini .keyword.other.definition.ini {
+  color: #e06c75;
+}
+.source.java .storage.modifier.import {
+  color: #e5c07b;
+}
+.source.java .storage.type {
+  color: #e5c07b;
+}
+.source.java-properties .meta.key-pair {
+  color: #e06c75;
+}
+.source.java-properties .meta.key-pair > .punctuation {
+  color: #abb2bf;
+}
+.source.js .keyword.operator {
+  color: #56b6c2;
+}
+.source.js .keyword.operator.delete,
+.source.js .keyword.operator.in,
+.source.js .keyword.operator.of,
+.source.js .keyword.operator.instanceof,
+.source.js .keyword.operator.new,
+.source.js .keyword.operator.typeof,
+.source.js .keyword.operator.void {
+  color: #c678dd;
+}
+.source.json .meta.structure.dictionary.json > .string.quoted.json {
+  color: #e06c75;
+}
+.source.json .meta.structure.dictionary.json > .string.quoted.json > .punctuation.string {
+  color: #e06c75;
+}
+.source.json .meta.structure.dictionary.json > .value.json > .string.quoted.json,
+.source.json .meta.structure.array.json > .value.json > .string.quoted.json,
+.source.json .meta.structure.dictionary.json > .value.json > .string.quoted.json > .punctuation,
+.source.json .meta.structure.array.json > .value.json > .string.quoted.json > .punctuation {
+  color: #98c379;
+}
+.source.json .meta.structure.dictionary.json > .constant.language.json,
+.source.json .meta.structure.array.json > .constant.language.json {
+  color: #56b6c2;
+}
+.source.ruby .constant.other.symbol > .punctuation {
+  color: inherit;
+}
+.source.python .keyword.operator.logical.python {
+  color: #c678dd;
+}
+.source.python .variable.parameter {
+  color: #d19a66;
+}
+</style>
+<script type="b5521693b6680881e335190e-text/javascript">
+  function lp_link(){
+    var param = location.search
+    console.log(param);
+    var lp_link = "https://www.sejuku.net/" + param;
+    location.href = lp_link;
+  }
+</script>
 </head>
-<body>
-  <!--header -->
-  <header>
-    <div class="container">
-      <div class="header-left">
-        <img class ="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
-      </div>
-      
-      <div class="header-right">
-        <a href="#" class="login">ログイン</a>
-      </div>
-    </div>
-  </header>
-
-  
-  <!--top-wrapper -->
-  <div class="top-wrapper">
-    <div class="container">
-      <h1>LEARN TO CODE.<br>LEARN TO BE CREATIVE.</h1>
-      <p>オンラインプログラミング学習サービスです。<br />初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
-      
-      <div class="btn-wrapper">
-        <a href="#" class="btn signup">新規登録はこちら</a>
-        <p>or</p>
-        <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookはこちら</a>
-        <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterはこちら</a>
-      </div>
-    </div>
-  </div>
-  
-  <!--lesson-wrapper -->
-    <div class="lesson-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>Learn Where to Get Started!</h2>
-      </div>
-      <div class="lessons">
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/html.png">
-            <p>HTML & CSS</p>
-          </div>
-          <p class="text-contents">ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-            <p>jQuery</p>
-          </div>
-          <p class="text-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/ruby.png">
-            <p>Ruby</p>
-          </div>
-          <p class="text-contents">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/php.png">
-            <p>PHP</p>
-          </div>
-          <p class="text-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
- <!--message -->
- <div class ="message-wrapper">
-   <div class="container">
-     <div class="heading">
-       <h2>さぁ、あなたもプログラミングを学んでみませんか?</h2>
-       <h3>Let's learn to code, learn to be creative!</h3>
-     </div>
-     <span class="btn message">さっそく開発する</span>
-   </div>
- </div>
-  
-  <footer>
-    <div class="container">
-      <img  class=footer-logo src="https://prog-8.com/images/html/advanced/footer_logo.png">
-      <p>Learn to Code, Learn to be Creative.</p>
-    </div>
-  </footer>
-  
-</body>
+<body class='markdown-preview' data-use-github-style><p><img src="https://www.sejuku.net/blog/wp-content/uploads/2016/06/bible-shadow.png" alt="&#x30BC;&#x30ED;&#x304B;&#x3089;&#x6700;&#x77ED;&#xFF11;&#x30F6;&#x6708;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30DF;&#x30F3;&#x30B0;&#x3092;&#x7FD2;&#x5F97;&#x3057;&#x30A2;&#x30D7;&#x30EA;&#x958B;&#x767A;&#x3082;&#x4ED5;&#x4E8B;&#x7372;&#x5F97;&#x3082;&#x3059;&#x308B;&#x65B9;&#x6CD5;"></p>
+<h2 id="-">本書について</h2>
+<p>私は<a href="javascript:void();" onCLick="if (!window.__cfRLUnblockHandlers) return false; lp_link();" data-cf-modified-b5521693b6680881e335190e-="">「侍エンジニア塾」</a>というプログラミング学習サービスを日々運営しているのですが、その立場上、数多くの学習者と接してきました。</p>
+<p>プログラミングスキルは非常に強力なスキルですので、身に付けることで「人生が大きく変わる」方を多く見てきています。ですが同時に、独学の場合、非常に多くの方が挫折していくのも見てきました。</p>
+<p>これまで7000名以上の方のプログラミング学習を支援してきた経験から、「どうしたら最短で確実にプログラミングを身につけることが出来るのか？」その答えを本書にまとめました。</p>
+<p>ここで紹介する七つのステップを踏めば、どのような方でもより確実にプログラミングを習得し、より豊かでより自由な人生を手にできるようになっています。</p>
+<p>2016年6月9日</p>
+<p>木内翔大</p>
+<p>※2018年8月改定</p>
+<h2 id="-">目次</h2>
+<ul>
+<li><a href="#section1">第一章</a><ul>
+<li><a href="#section1-1">はじめに</a></li>
+<li><a href="#section1-2">今すぐプログラミングを身につけるべき理由</a></li>
+<li><a href="#section1-3">だれでもエンジニアになれる時代</a></li>
+<li><a href="#section1-4">1ヶ月で人生を変える、プログラミング修得の7ステップ</a></li>
+</ul>
+</li>
+<li><a href="#section2">第二章</a><ul>
+<li><a href="#section2-1">STEP1 プログラミングを学ぶ「目的」を決める</a><ul>
+<li>目的あってのプログラミング</li>
+<li>プログラミングスキルを身につけるメリットおさらい</li>
+<li>ワーク</li>
+</ul>
+</li>
+<li><a href="#section2-2">STEP2 プログラミングで実現する「目標」を決める</a><ul>
+<li>効果的な目標設定に必要なSMARTの法則</li>
+<li>必要な学習時間について</li>
+<li>ワーク</li>
+</ul>
+</li>
+<li><a href="#section2-3">STEP3 プログラミングを学ぶ「教材」を決める</a><ul>
+<li>無数に有る教材から、あなたにあった教材を選ぶ必要性</li>
+<li>まずは言語選定</li>
+<li>教材を選ぶコツ</li>
+<li>３つのおすすめ教材</li>
+<li>ワーク</li>
+</ul>
+</li>
+<li><a href="#section2-4">STEP4 プログラミングを学ぶ「準備」をする</a><ul>
+<li>学習を始める上で必要不可欠な３つの要素</li>
+<li>パソコンとネット環境</li>
+<li>テキストエディタ</li>
+<li>実行環境</li>
+</ul>
+</li>
+<li><a href="#section2-5">STEP5 プログラミングの「基礎」を固める</a><ul>
+<li>まずは教材の通り再現してみる</li>
+<li>教材を段階に合わせてアップデートする</li>
+<li>本当の基礎固めをするために「改造」をする</li>
+<li>プログラミング基礎サイクル</li>
+<li>挫折しないための３つのマインドセット</li>
+<li>ワーク</li>
+</ul>
+</li>
+<li><a href="#section2-6">STEP6 プログラミング習得のキモ、「作品」を作る</a><ul>
+<li>作品作りをするこちによって得られる３つのメリット</li>
+<li>作品作りの基本３ステップ</li>
+<li>だれでもできる企画アイデア大量発想法</li>
+<li>最も簡単な設計、ワイヤーフレーム</li>
+<li>基本サイクルを回して開発</li>
+<li>オリジナル作品開発のコツ</li>
+<li>過去の塾生の作品例</li>
+</ul>
+</li>
+<li><a href="#section2-7">STEP7 プログラミングで稼ぐために「仕事」を獲得する</a><ul>
+<li>エンジニアという仕事の３つの魅力</li>
+<li>未経験でも仕事ができる４つの理由</li>
+<li>1周間で仕事獲得する方法その１【転職編】</li>
+<li>1周間で仕事獲得する方法その２【クラウドソーシング編】</li>
+<li>1周間で仕事獲得する方法その３【営業編】</li>
+<li>よくある失敗パターン</li>
+<li>仕事獲得後のキャリアアップ法</li>
+<li>ワーク</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#section3">最後に</a></li>
+<li><a href="#profile">プロフィール</a></li>
+</ul>
+<hr>
+<h1 id="-a-name-section1-a-"><a name="section1">第一章</a></h1>
+<h2 id="-a-name-section1-1-a-"><a name="section1-1">はじめに</a></h2>
+<h3 id="-">プログラミングを身に着けたい</h3>
+<p>あなたはどんな理由でプログラミングを学びたいと思いましたか？</p>
+<p>「思い描いたアイデアを形にしたい」<br>「エンジニアとして働いてみたい」<br>「フリーランスになって自由な働き方をしたい」</p>
+<p>実に様々な想いの方がいらっしゃいます。理由はともあれ、本書を読まれていて、これからプログラミングを身につけようとされているあなたは非常に運がいいかもしれません。</p>
+<p>なぜならば、あなたが感じている通り、プログラミングスキルはあなたの人生の新しい可能性を引き出してくれます。また、今後無くてはならないスキルと言われるほど今求められているスキルだからです。</p>
+<h3 id="-">本書の内容と効果</h3>
+<p>ここで質問ですが、「プログラミングを独学で身につける場合どのくらいの割合で挫折すると思いますか？」と聞かれたらなんと答えるでしょうか。実はこの答えは90%以上とも言われています。</p>
+<p>本書はプログラミングの効率的な学習方法についてまとめられていますが、そのノウハウは7000名以上のプログラミング学習支援によって培われた、ネットや書籍でも知ることが出来ない独自のものになっております。</p>
+<p>本書を活用することによって何倍もの効率でプログラミング学習をすることができ、挫折率も大きく減らすことが可能です。「独学者必見」とも言える内容になっています。</p>
+<h3 id="-">本書の使い方</h3>
+<p>本書はプログラミングの効率的な学習方法について書かれていますので、本格的に学習をする前に読むことをおすすめします。また、学習中で悩んでいる方は、これを読むことによって、悩みが解消されるよう書いています。</p>
+<p>まずは、全体を把握する必要があるので、流し読みで構いませんので通して読んでみてください。そして、実際に学習をする際は、マニュアルのように度々読み返しながら活用することをおすすめいたします。</p>
+<p>そうすることによって、学習に必要なモチベーションや、学習効率が高まるので、挫折せずにプログラミングを習得することが出来るようになっています。</p>
+<h2 id="-a-name-section1-2-a-"><a name="section1-2">今すぐプログラミングを身につけるべき理由</a></h2>
+<p>なぜ、今プログラミングスキルが注目され、学ぶ必要があるのでしょうか？プログラミングを学ぶことによるメリットを説明していきます。</p>
+<h3 id="-">現代必須のスキルが身につく</h3>
+<p>実は、<strong>既にプログラミングが義務教育化されているのをご存知でしょうか？</strong> 2012年の新学習指導要領より、「プログラムによる計測・制御」が義務教育化されました。</p>
+<p>プログラミングをはじめとするITスキルは年々その必要性が増してきており、昔だったらWord, Excel, PowerPointが必須でしたが、今はそこにプログラミングも入りつつあります。 特にIT業界となると、その傾向は顕著となってきています。</p>
+<p>さらに、プログラミングを学ぶことによって、<strong>「ロジカルシンキング」や「問題解決力」が自然と身につきます。</strong> ロジカルシンキングや問題解決力は今のビジネスマンにとっては必須の能力といえます。 </p>
+<p>スティーブジョブスも以下のように過去のインタビューで語っています。</p>
+<blockquote>
+<p>アメリカ人は全員コンピュータのプログラミングを学ぶべきだと思うね。なぜなら、コンピュータ言語を学ぶことによって考え方を学ぶことが出来るからだ。ロースクールに行くようなものだよ。全員が弁護士になるべきだとは言わないけれど、現実にロースクールに通うことは人生に役立つはずだ。一定の方法で物事の考え方を学べるからね<br>【スティーブ・ジョブズ1995 ～失われたインタビュー～】</p>
+</blockquote>
+<p>ちなみに元アメリカ大統領のオバマ氏も熱心に国策としてプログラミング教育を広めており、<strong>アメリカ国内で数千万人規模の児童や生徒が学ぶムーブメントになりつつあります。</strong> オバマ氏はこのように発言しております。</p>
+<blockquote>
+<p>プログラミングを学ぶことは、みなさんの将来にとって重要なだけでなく、アメリカにとっても重要です。 アメリカが最先端であるためには、プログラミングや技術をマスターする若手が必要不可欠です。新しいビデオゲームを買うのではなく、作ってください。</p>
+<p>最新のアプリをダウンロードするのではなく、設計してください。</p>
+<p>それらをただ遊ぶのではなく、プログラムしてください。誰もがプログラマーとして生まれたわけではなく、少しのハードワークと数学と科学を勉強していれば、プログラマーになることが出来ます。あなたが、誰であっても、どこに住んでいてもコンピューターはあなたの将来において重要な役割を占めます。</p>
+<p>あなたがもし勉強を頑張れば、その未来は確かなものとなるでしょう。</p>
+</blockquote>
+<p>既にPCを使えない人がヤバイように、「プログラミングが出来ないのがヤバイ」時代が来ることは間違いないでしょう。</p>
+<h3 id="-">手に職がつく</h3>
+<p><a href="http://news.ameba.jp/20160318-929/">今後10年でなくなる17の職業</a>をオックスフォード大学の研究チームが発表して話題になりました。多くの研究でテクノロジーの進化に伴い今ある半分以上の仕事が今後数十年でなくなるという予想が出ています。人間にはコンピューターには出来ないような創造的な仕事や技術を求める時代が来ているということです。</p>
+<p>プログラミングはまさに技術職と呼ばれるように、専門知識と専門技術が必要なスキルです。だからこそ、現代では圧倒的に不足していて求めれているスキルセットとなっています。また、今後数十年も最新の技術をキャッチアップしている限りは求められ続けるでしょう。</p>
+<p>批判を恐れず言えば、いまから学習をはじめて、平均以上の技術力を持てば、10年スパンで見て「公務員よりも安泰」であることは間違いありません。なぜならば、この先グローバル化とIT化は避けて通れない道で、公務員のような事務方の仕事やルーチン化された仕事はロボット化され削減されます。逆にITエンジニアのような仕組みを作る人材が求められる時代が来ているからです。</p>
+<p>上に書いたとおり、先進各国がプログラミング教育に力を入れているのは、まさにそういった背景があるからです。</p>
+<h3 id="-">自由が広がる</h3>
+<p>日本人の感覚からすると、「エンジニア」と聞くと、まだまだ、ブラックなイメージが有るかもしれません。しかし、100万人規模でエンジニアが足りない現代では、エンジニアは花型の職業になりつつあります。</p>
+<blockquote>
+<p>10年前のエンジニアっていうと、大量採用されるSI会社のエンジニアというイメージが強かった。でも、今ネット企業で活躍するエンジニアはクリエイティブな仕事へと変わってきていて、トップエンジニアはまさにスター。[サイバーエージェント藤田社長] </p>
+</blockquote>
+<p>更にエンジニアはフリーランスやリモートワーク（遠隔作業や在宅）との相性が非常に高く、<strong>自由な働き方が可能な職といえます。</strong></p>
+<p>以下に、エンジニアになると手に入れることができる五つの自由を書いていきます。</p>
+<h4 id="1-">1. 経済の自由</h4>
+<p>近年深刻なエンジニア不足により、<strong>エンジニアの単価が右肩上がりとなっています。</strong>
+足りない人材を企業はこぞって取り合うため、自然に給与が高くなっています。</p>
+<p>リクルートジョブズの2016年の調査によると「SE・プログラマ・ネットワークエンジニア」の平均派遣時給は「2,485円」となっており、派遣手数料も合わせると企業は平均的なエンジニア一人を雇うのに<strong>時給4000円程支払っている</strong>計算となります。</p>
+<p>つまり1年目だとしても、フリーランスで派遣会社を通さず企業と直接契約した場合、平均値よりも25%低くても時給3000円は獲得できるのです。実際に過去の生徒さんの例から見ると、そういう事は「よくあること」です。</p>
+<h3 id="2-">2. 時間の自由</h3>
+<p>冒頭にも述べた通り、エンジニアは「帰れない」つまり、「残業が多い」というイメージが強い様ですが、実は、世の中にある職業の中でも数少ない、時間的な自由を獲得できる職業といえます。</p>
+<p>その理由は納品物（コード）が明確なので、部分的な作業でも報酬が発生するという特徴があります。さらに、業務委託という形（いわゆるフリーランス）であれば好きな稼働時間で仕事をすることが可能になります。例えば、月100時間の稼働で50万円の案件を請け負って、残りの時間は自由ということになります。</p>
+<p>深刻なエンジニア不足であるWEB業界は猫の手も借りたい状態です。週1〜2日の作業で数十万という案件は数え切れないほどあります。
+（参考：<a href="https://flxy.jp/service/?ver=2">flexy｜案件一覧</a>）</p>
+<h3 id="3-">3. 表現の自由</h3>
+<p>例えば、絵を描くのが好きな人は絵を描いて、歌が好きな人は歌を歌って自己表現をする様に、エンジニアも、WEBサイトやアプリを開発し自己表現をすることが出来ます。</p>
+<p>慣れてくれば、頭のなかに有るアイデアを一日や一週間などの短期間で形に出来ます。例えば、ハッカソンをご存知でしょうか？ハッカソンとは「ハッカー」と「マラソン」を合わせた混成語で、アプリケーションを短期間でエンジニアやデザイナーやプランナーが力を合わせて作るイベントです。今日本でも大変注目されているイベントです。</p>
+<p>自分が思いついたものを自分や仲間を集めるもよし、ハッカソンなどのイベントに参加して腕を磨くもよし、「イメージしていたものを現実にしていく」この過程自体がエンジニアの最大の喜びでもあります。</p>
+<h3 id="4-">4. 場所の自由</h3>
+<p>近年、急速にリモートワーク（いわゆる在宅勤務）という働き方が広がってきました。<strong>あのリクルートも2015年にリモートワークを全社員対象にしました。</strong>（参考：<a href="http://www.nikkei.com/article/DGKKASDZ07HZO_R10C15A8MM8000/">リクルート、在宅勤務を全社員対象に　グループ2000人　上限日数なく　：日本経済新聞</a>）</p>
+<p>特にエンジニアの場合、成果物が明確で、インターネットさえ繋がっていれば作業が可能なため、<strong>このリモートワークとの相性が非常にいいです。</strong> また、クラウドソーシングと呼ばれるインターネット上で仕事を仲介するサービスの普及により、よりリモートワークの案件を獲得するのが容易となりました。</p>
+<p>インターネットさえつながれば、田舎でも海外でも、あなたの好きなところで働くことが出来るのもエンジニアという職の魅力です。</p>
+<h3 id="5-">5. 人生の自由</h3>
+<p>これまで紹介してきた「経済の自由」「時間の自由」「表現の自由」「場所の自由」を手に入れることができれば、「人生の自由」も手に入れることができるといっても、過言ではないのではないでしょうか。あくまで一例ですが</p>
+<ul>
+<li><strong>週二日だけ働き、後の時間を自由に過ごす</strong></li>
+<li><strong>子育て家事を両立しながら月収50万円以上稼ぐ</strong></li>
+<li><strong>田舎や海外に移住したり、旅をしながら仕事をする</strong></li>
+</ul>
+<p>そういったことも十分可能になります。</p>
+<p>日本では圧倒的にエンジニアが足りていません。業が得意なエンジニア。元アパレル定員のエンジニア。芸術家兼エンジニア。バンドマンでありエンジニアである。英語が得意なエンジニア。そういった多種多様なエンジニアがもっと存在してもいいのではないでしょうか。今まで培ってきたスキルとプログラミングを掛けあわせて、より自由な人生を獲得することが出来ます。</p>
+<h2 id="-a-name-section1-3-a-"><a name="section1-3">だれでもエンジニアになれる時代</a></h2>
+<p>実は、全くのIT音痴（と自分で言う方）でも、短期間でエンジニアに転身される方は数多くいらっしゃいます。比較的得意な方で１ヶ月、PCが苦手な方でも６ヶ月ほど学習すれば確実にプログラミング基礎は身につきます。</p>
+<p>しかも、現代は昔に比べて未経験からエンジニアに転身しやすい時代となっています。以下にその理由をご説明します。</p>
+<h3 id="1-">1. 圧倒的人材不足</h3>
+<p>以下の図をご覧ください。</p>
+<p><img src="https://s3-ap-northeast-1.amazonaws.com/samurai-blog-media/blog/wp-content/uploads/2016/03/img_4f19c0fc8a25df26dcfaccf37f7bb5f17651.gif"></p>
+<p>リクルートワークス研究所によると、4年後の2020年には<strong>全就労人口の半数</strong>である「3098万人」がIT業界で働いている状態になると報じられています。</p>
+<p>世界中でIT化が進み、業界の根幹を支えるエンジニアが完全に不足しています。そういった状況をみて、国や政策単位でもプログラミング教育の必要性が叫ばれています。さらに、直近の有効求人倍率を見てみましょう。</p>
+<p><img src="https://www.sejuku.net/blog/wp-content/uploads/2016/05/g_03.gif" alt="&#x56F3;&#xFF1A;&#x8077;&#x7A2E;&#x5225;&#x306E;&#x8EE2;&#x8077;&#x6C42;&#x4EBA;&#x500D;&#x7387;">
+出所：株式会社インテリジェンス DODA転職求人倍率レポート</p>
+<p>2016年4月時点で、IT技術職の求人倍率は3.29倍となっており、多職種に圧倒的差をつけています。つまり、働きたい人よりも、雇いたい企業のほうが3倍以上多いということです。今後労働人口が減っていく中で、上でもご説明したとおりITの需要はますます伸びることは間違いありません。この傾向は更に強まるでしょう。近い将来5倍や6倍に達する可能性も十分にあります。</p>
+<p>そんな中、大手のITベンチャーでは、新卒エンジニアの半数以上が未経験という会社も少なくありません。また、以前では考えられませんでしたが、30代前半までなら、未経験でも中途採用をする企業も少なくありません。</p>
+<p>中小やベンチャー企業はより顕著で、前述のとおり、エンジニアの単価が非常に高くなっています。経験豊富なエンジニアを雇おうにも時給単価が5000~10,000円ほどすることもあり、それであれば、未経験でも採用して人件費を安く抑えたい事情があるようです。つまり、<strong>猫の手も借りたい状態の企業が数多く存在する</strong> のが現状です。</p>
+<p>試しに、Googleで「エンジニア 未経験」と検索して見ると、様々な方が未経験からエンジニアに転身されているのがわかるかと思います。また、実際に未経験の求人なども見つけることが出来るでしょう。</p>
+<h3 id="2-">2. 学習環境の変化</h3>
+<p>実はここ数年、年を追うごとに<strong>プログラミングを学ぶのが容易になってきているのはご存知でしょうか？</strong> 以前はスクールに通わない場合、書籍を中心とした学習でした。書籍の学習もいいところは有るのですが、そもそも良い書籍と出会えるかが非常に重要で、仮に出会えたとしてもわからない言葉がたくさん出てきて挫折してしまう方が非常に多い印象でした。</p>
+<p>昨今はWEB上でプログラミングを手軽に、そして非常にわかりやすく学べるサービスが次々と出てきています。動画教材サイト大手<a href="http://dotinstall.com/">「ドットインストール」</a>や、ブラウザ上で問題を解いていくだけで学べる<a href="https://prog-8.com/">「Progate」</a>など、無料〜月額1000円以下で学べるサイトです。</p>
+<p>これらのサイトの教材は、以前だったら、大手のスクールがDVDのセット販売で10万円以上で販売していたようなクオリティーです。つまり、大手スクールに大きな投資をしてまで入らなくてもプログラミングを身につけられる環境になってきたのです。</p>
+<h3 id="3-">3. ツールの充実</h3>
+<p>プログラミング学習に必要な準備は教材だけではありません。ソースコードを記述するテキストエディタ（メモ帳のようなもの）や、ソースコードをプログラムとして動作させるために必要な環境構築（動作に必要なプログラムをインストールすること）が必要です。</p>
+<p>以前は、テキストエディタといえば、数千円〜数万円ほどする高価なものが必要でした。しかし、今では<a href="https://www.sejuku.net/blog/450">「Atom」</a>などの<strong>高価なテキストエディタと同等以上のものが無料で配布されています。</strong></p>
+<p>また、環境構築も以前は「入門者殺し」といえるほど難易度が高く、挫折の最大の原因でした。しかし、現在では<a href="https://www.sejuku.net/blog/385">「Cloud9」</a>のように、環境構築自体をしなくても良いようにする革命的なツールが現れ、初心者の救世主となっております。</p>
+<h3 id="4-">4. プログラミングは実は文系の仕事</h3>
+<p>プログラミングと言うと、理系のイメージが強いかと思います。ですが、実際は一部のプログラミングを除いて、数学や物理のような<strong>高度な知識は全く必要がありません。</strong>当然ですが、<strong>あくまで「言語」なので、文系の職業とも言えます。</strong></p>
+<p>その証拠に、今では小学生もプログラミングを学ぶ時代になっています。<a href="http://techkidscamp.jp/school/">「Tech Kids」</a>のような子供向けプログラミングスクールも増えてきました。さらに、2020年から<a href="http://www.mext.go.jp/a_menu/shotou/zyouhou/detail/1375607.htm">小学生へのプログラミング教育の義務教育化</a>が本格的に始まります。</p>
+<p>ある意味語学と一緒で、<strong>ある一定の学習をすれば誰でも習得可能なもの</strong> といえます。</p>
+<h2 id="-a-name-section1-4-1-7-a-"><a name="section1-4">1ヶ月で人生を変える、プログラミング修得の7ステップ</a></h2>
+<p>ここまで、プログラミングスキルを習得するべき理由と、出来る理由をお伝えしてきました。しかし、多くの方はまだまだ自分にプログラミングができるなんて半信半疑かと思います。</p>
+<p>それはそうでしょう。実際にどのような過程でプログラミングスキルを身につけられるか？それがわからないので無理もありません。ここからは、本書の目的でもある<strong>「最短のプログラミング習得法」</strong> をお伝えしていきます。</p>
+<p>このステップバイステップを実践することによって、最短でプログラミングスキルを身につけることが出来ます。プログラミング学習はその学習方法によって、大きくトータル学習時間が変わってきます。この学習方法を実践することによって、<strong>最低でも2倍、最大で10倍程のスピードでプログラミングを習得することができてしまいます。</strong></p>
+<p>また、その分挫折率を大きく下げてくれるので、せっかく割いた学習時間を無駄にせず、プログラミング学習を成功させることが出来るでしょう。</p>
+<h3 id="step1-">STEP1 プログラミングを学ぶ「目的」を決める</h3>
+<p>まずはじめに、プログラミングを学ぶ目的から明確にしていきます。一刻も早く学習を始めたいかもしれませんが、このステップが非常に重要になってきます。なぜならば、この目的が定まらなければ、教材や学習方法が決まらないからです。</p>
+<p><strong>プログラミングはあくまで「目的を達成するためのツール」です。</strong> プログラミングを身につけること自体を目的にするのではなく、<strong>「プログラミングを身に着けた先に何を得たいのか？」これを明確にします。</strong></p>
+<p>目的を明確にしないと、言語も教材も決まらないので、学習をスタートすることができませんし、なんとなくスタートしても途中で挫折する確率が非常に高いです。目的を明確にすることで、目標や言語や教材が決まり、あなたに最適な学習をスタートすることが出来ます。</p>
+<h3 id="step2-">STEP2 プログラミングで実現する「目標」を決める</h3>
+<p>次に必要なのが、目標の明確化です。ここで言う目標とは主に以下の3つです。</p>
+<ol>
+<li>目的の目標化</li>
+</ol>
+<p>例えば、目的が「転職」だったら「半年以内にWEBエンジニアになる」などで、「年収アップ」だったとしたら「2年以内に年収600万円、5年以内に年収1000万円」など、アバウトでOKです。ポイントは「<strong>いつまで</strong>に<strong>何をどの位</strong> 得たいのか？」を明確にすることです。</p>
+<ol>
+<li>学ぶ言語</li>
+</ol>
+<p>例えば、「半年以内にWEBエンジニアに転職する」ことが目標であれば、WEB業界で需要が高く、入門しやすい言語を選ぶのがポイントです。あくまで一例ですがPHPやRubyなどがおすすめです。</p>
+<ol>
+<li>行動目標</li>
+</ol>
+<p>例えば、PHPやRubyで未経験から転職する場合、学習目安時間は最低300時間になります。半年間で300時間になるので、月50時間/週12時間程の学習時間となります。平日毎日1時間やって、土日どちらかで7時間学習するか、土日だけ6時間づつ学習するのが目標になります。</p>
+<p>これらはあくまで一例ですので、後の2章で詳しく解説させていただきますが、だいたいこのような感じです。緻密である必要はありませんが、この目標化をせずに学習をスタートされる方が非常に多く、挫折の原因になっています。しっかり、目標設定しましょう。</p>
+<h3 id="step3-">STEP3 プログラミングを学ぶ「教材」を決める</h3>
+<p>次に決めるのは、学習教材です。冒頭でも述べたとおり、今は質の高い教材が数多くあります。しかし、教材の数は無数に増えつつあるので、その中から自分にあった良質な教材を自力で見つけることは至難の業です。</p>
+<p>あなたにあった良質な教材を見つけることができれば、学習時間を大幅に縮め、プログラミング学習を成功へ導いてくれる鍵となります。その方法を次章で詳しく解説してきます。</p>
+<h3 id="step4-">STEP4 プログラミングを学ぶ「準備」をする</h3>
+<p>目的目標も決まり、教材を決めたところで、いよいよ学習開始！といきたいところですが、プログラミング学習には「準備」が必要です。代表的な例が環境構築で、必要なプログラムをあなたのパソコンにインストールする必要があります。</p>
+<p>以前はこの準備が時間的にも経済的にも負担が大きかったです。しかし昨今では、この準備を無料かつ数分で行うことも出来るツールが数は少ないですが出てきています。これらの多くの学習教材では触れられてない便利なツールの紹介を次章で詳しくしてきます。</p>
+<h3 id="step5-">STEP5 プログラミングの「基礎」を固める</h3>
+<p>さて、いよいよプログラミング学習に突入していきます。実はこの基礎を固めるステップは適切な教材さえ選べれば、難しくはありません。なぜならば、このステップでまずやることは、ひたすら教材を「まねる」ことだからです。</p>
+<p>「学ぶ」の語源は「まねぶ」、つまり真似ることとされています。プログラミング学習に関しても教材を真似ることが最初のステップになります。</p>
+<p>もちろん、教材を真似るだけでは、本物の基礎は身につきません。本物の基礎をみにつけていくには、教材を真似たあとに「あること」をする必要があります。このステップではそれらの学習のコツについて詳しく解説していきます。</p>
+<h3 id="step6-">STEP6 プログラミング習得のキモ、「作品」を作る</h3>
+<p>プログラミングの基礎を固めたあとは作品作りを行います。この作品作りを行うことで、あなたが作りたいものを作れるようになり、同時に「スキルとしてのプログラミング」が身につきます。</p>
+<p>STEP5で身につけた基礎はあくまで「知識」でした。その知識を作品作りを通して「技術」に消化させていくのができるのです。また、この作品があなたの実績になり、未経験からの仕事獲得を可能にしてくれます。</p>
+<p>このステップがプログラミング習得の最大のキモと言えるでしょう。</p>
+<h3 id="step7-">STEP7 プログラミングで稼ぐために「仕事」を獲得する</h3>
+<p>冒頭でも解説しましたが、現代は非常にエンジニアが不足しています。ですので、「自力で学ぶ力」さえついていれば、未経験でも採用する企業は数多くあります。「自力で学ぶ力」の証明となるのが、STEP6の作品になります。</p>
+<p>このステップさえしっかり踏んでいれば、どのようなツールを使い、どのように企業にアプローチをして仕事を獲得するかだけです。次章で解説するツールとアプローチ方法を使えば、最短1周間ほどで仕事を獲得することも十分に可能です。</p>
+<p>また、最初の仕事を獲得した後に、どのようにキャリアアップしたり、自由を獲得していくのかについても解説していきます。</p>
+<hr>
+<h1 id="-a-name-section2-"><a name="section2">第二章</a></h1>
+<h2 id="-a-name-section2-1-step1-a-"><a name="section2-1">STEP1 プログラミングを学ぶ「目的」を決める</a></h2>
+<p>プログラミング学習の始めにすることはプログラミングをなぜ学ぶのかという目的を明確にすることです。なぜならば、プログラミングスキルは非常に可能性の広がるスキルですが、同時に挫折率も高いからです。</p>
+<p>最大の挫折の原因は「モチベーションが続かないこと」でその多くは、プログラミングを学ぶ目的が特にないということが原因です。逆にプログラミングを学ぶ目的が明確で、必要性や意欲を感じ続ける事ができた人は結果的に挫折せず、大きな成果を残す方が多いです。</p>
+<p>つまり、このSTEP1の<strong>「目的を決めること」があなたのプログラミング学習の成否を分ける重要なステップ</strong>となってきます。</p>
+<h3 id="-">目的あってのプログラミング</h3>
+<p>私達の運営する侍エンジニア塾では、<strong>プログラミングを「人生が変わるスキル」として捉えています。</strong> と言いますのも、代表の私自身プログラミングで大きく人生が変わりましたし、日ごろ関わるインストラクターや生徒さんも大なり小なり皆さんそういう体験をされているからです。</p>
+<p>私自身は特殊で、小学校五年生の時にプログラミングと出会いました。きっかけは担任の先生の一言でした。私がTVゲームが好きなのをみて先生はこういいました。</p>
+<p>「しょうた。ゲームが好きなら、ゲームをやるだけじゃなくて、作ればいいじゃん。」</p>
+<p>もちろん最初はゲームが作れるという思考は全く無い訳ですから、「ポカン」という感じでした。ですが、同時に子供ですから無理とも思わず、気軽にそのアイデアに飛びついたのです。さっそく、その日の帰りに図書館によって、子供向けプログラミング本を借りてプログラミングライフがスタートしました。</p>
+<p>最初の目的は、ゲームと一緒で「楽しいことをする」事が目的でプログラミングを始めました。実際に、本の通りコードを打ちこむとプログラムが走り、想像の世界が現実になっていくので非常に楽しかったのを覚えています。まさに冒頭ご説明した表現の自由です。</p>
+<p>あくまで一例ですが、そのように「楽しいこと」を目的に始めたり、「稼ぐこと」や「より自由になること」を目的としてもいいと思います。<strong>大切なのは、プログラミングを学ぶこと自体を目的とせず、「プログラミング学習の先に何を求めるか？」それが明確な人が成功する</strong> ことは間違いありません。</p>
+<p>それでは、どのようなことを目的としてプログラミングを学べばよいのでしょうか？そしてそもそもプログラミングで何が出来るのか？どういったメリットが自分にあるのか？それが重要です。</p>
+<h3 id="-">プログラミングスキルを身につけるメリットおさらい</h3>
+<p>1章でも述べたとおり、プログラミングを身につけることによって様々なメリットを享受出来ます。その代表例として以下の3つをご紹介しました。</p>
+<ol>
+<li>現代必須のスキルが身につく</li>
+<li>手に職が身につく</li>
+<li>自由が広がる</li>
+</ol>
+<p>他にも、これまで１０００名以上のプログラミング学習者の相談に乗ってきた経験を元に、代表的なプログラミングを学ぶ動機についてご紹介します。</p>
+<ul>
+<li>プログラミングってできたら楽しそう</li>
+<li>アプリを作ってみたい</li>
+<li>HPを作れるようになりたい</li>
+<li>プログラミングスキルを身につけて仕事の幅を広げたい</li>
+<li>プログラミングで今の仕事を効率化したい</li>
+<li>ビジネスを成功させたり拡大する上でプログラミングスキルが必要</li>
+<li>主婦のパートタイムや内職の代わりの副業としてのエンジニア</li>
+</ul>
+<p>あくまで一部ですが、こういった方が多いです。まとめると、以下の3つに大きくわけられるかと思います。</p>
+<ul>
+<li><strong>仕事の幅や安定性、年収を高めるため</strong></li>
+<li><strong>何か作りたい、またはビジネスのため</strong></li>
+<li><strong>自由なライフスタイルやワークスタイルを実現するため</strong></li>
+</ul>
+<p>総じていうと、やはり「なんか面白そう」「なんとなく必要だと思う」位の軽い気持ちよりも、強い欲求やニーズが有る人のほうが挫折せずプログラミングをものにできるようです。</p>
+<p>もちろん、最初は軽い気持ちで始めて見る、そんなフットワークの軽さは重要です。ですがそれだけでは長続きしませんので、少しイメージを広げて、<strong>「人生を変えるためのプログラミング学習」</strong> として考えてみてはいかがでしょうか？</p>
+<h3 id="-">ワーク</h3>
+<p>プログラミング学習最大の壁「モチベーションの維持」をするために、プログラミングを学ぶ目的を明確にしましょう。以下のワークをお試しすることをおすすめします。</p>
+<ol>
+<li>自分が5年以内に、「ほしいもの」「やりたいこと」「なりたい自分」をリストアップする</li>
+<li>1の願望や目標に繋げる形で、プログラミングを学ぶ目的を考える</li>
+</ol>
+<p>例えば、1の願望の多くが、収入が上がることによって叶うのであれば、「収入を上げること」がプログラミングを学ぶことの一番の目的になります。</p>
+<p>また、1の願望が自由なライフスタイル中心だとしたら「自由になること」が、新しい物を生み出したり、なにか大きなプロジェクトをすることが中心だったら「作ること」が目的になりますね。</p>
+<p>コツとしては、今の延長線上で考えないことが重要です。そうしないために「何も制限がないとしたら？」「男でもできるとしたら？」などの質問を自分にしてあげてください。あくまで気楽に子供心をもって考えてみるとイメージが広がりやすいです。</p>
+<h2 id="-a-name-section2-2-step2-a-"><a name="section2-2">STEP2 プログラミングで実現する「目標」を決める</a></h2>
+<p>さて、STEP2では、STEP1できまった目的を、より具体的な目標に昇華させていきます。これはSTEP1と同様、プログラミング学習の動機をしっかりと固め、挫折率を下げるために行います。</p>
+<p>また、<strong>この目標が明確にならないと、適切な言語や教材がわからないので、学習をスタートすることが出来ないのです。</strong> プログラミング学習は入り口と学び方を間違えると、どれだけ学習しても報われないということが多々あります。</p>
+<p>つまり、学習そのものに戦略やプランが必要なのです。目標を明確にし、あなたにあった学習プランを考える準備をしましょう。</p>
+<h3 id="-smart-">効果的な目標設定に必要なSMARTの法則</h3>
+<p>そもそも目標と目的は似てますし、混同しやすいと思います。ここでいう目標とはどのようなものでしょうか？そのヒントになるSMARTの法則をご紹介します。</p>
+<p>SMARTの法則は、プログラミングに限らず、どの目標達成に対しても有効な目標設定法です。なぜSMART(スマート)かというと、必要な５つの要素それぞれの頭文字をとっているからです。早速見ていきましょう。</p>
+<ul>
+<li>Specific → 具体性・わかりやすさ</li>
+<li>Measurable → 計測可能制・数値化出来る</li>
+<li>Agreed　upon → 同意できる・望む結果である</li>
+<li>Realistic → 現実性・達成のイメージが湧く</li>
+<li>Timely → 期限が明確</li>
+</ul>
+<p>以上の５つの頭文字をとってSMARTの法則と覚えます。あまり難しく考えず、<strong>「計測できるほど具体的で、現実的に達成可能な、期日付きの目標」</strong> を設定するということです。</p>
+<p>ダイエットに例えるなら、目的が「綺麗になること」でざっくりとした目標が「痩せること」だった場合、SMARTな目標は「夏まで（期日）に5kg痩せて（具体性/数値/現実性）、キレイと言われる（望む結果）」の様になります。</p>
+<p>プログラミング学習も同じようにSTEP1で明確にした目的をSMARTな目標にすることが大切です。</p>
+<h3 id="-">必要な学習時間について</h3>
+<p>SMARTな目標設定をしていくうえで、課題になるのが期日です。「いったいどの程度学習したら良いのかわからない」「どのくらいの期間でたっせいできるのか？」など、そもそもイメージが湧かないので、適当な期日をつけてしまいがちです。</p>
+<p>この期日の設定を間違えると、思ったより時間がかかって途中でやる気を失ってしまったり、必要以上の学習期間を設けてしまい、いつまでも学習の域を出れなかったりします。適切な学習期間と計画を持つことが重要です。</p>
+<p>ここで、学習目安時間の一例ですが、参考までに作りたいもの別に、簡単な作品が作れるようになるまでの時間をご紹介しておきます。仕事獲得に関しては、シンプルなものを自力で作れるスキルが有れば数時間から十数時間で仕事が取れてしまいますので、ここでは省きます。また、もちろん作りたいものが複雑であったり高度な技術を要する場合は大幅に伸びます。</p>
+<ul>
+<li><strong>HPやブログを作れるようになるまで → 30h ~ 100h</strong></li>
+<li><strong>スマートフォンアプリを作れるようになるまで → 100h ~ 300h</strong></li>
+<li><strong>WEBサービス（アプリ）を作れるようになるまで → 150h ~ 500h</strong></li>
+</ul>
+<p>単位hは時間で、最小値はPCが得意な方がスクールなどを利用した場合の目安で、最大値はPCが得意ではない方が完全な独学で学習した場合でかつ、本書の学習ステップを踏んだ場合です。</p>
+<p>適切な学習ステップを踏まなければこの学習時間が何倍にもなる可能性はあります。よくご相談を受ける方で、既に１年以上学習しているけど、一向にモノを作れないという方がいらっしゃいますが、それは本書で紹介するステップを踏んでいないためです。</p>
+<p>学習時間の取り方のコツとして、月50時間以上は確保することをおすすめします。と言いますのも、プログラミングを始めると、新しく覚えることが沢山あります。まとまった学習時間を取っていないと、学びながら忘れてしまい、効率が悪くなります。</p>
+<p>また、週末だけ学ぶよりも、毎日コツコツと学習したほうが効率的です。５日も期間が開くと、先週学んだことを思い出すところからスタートするからです。ですので月50時間の場合の理想としては、平日毎日1h、土日3hとするとよいでしょう。</p>
+<p>例えば、平日1.5h、土日4.5h確保できれば月70時間は確保できるので3~6ヶ月ほど学習すれば大抵の言語は習得することが出来ます。あくまで目安ですので、あなたの状況に合わせて学習目標に落とし込んでみてください。</p>
+<h3 id="-">ワーク</h3>
+<p>さて、ここで、STEP1で出した目的をさらに具体化してSMARTな目標にしましょう。以下のワークをヒントにして頂ければと思います。</p>
+<ol>
+<li>STEP1でだした目的を再確認する</li>
+<li>1をSMARTの法則を使って具体化する</li>
+</ol>
+<p>やることはシンプルですが、イメージが湧かない部分もあるかと思いますので代表的な例をいくつかご紹介します。</p>
+<ul>
+<li>年収を上げたい<br>→ ３ヶ月以内にスマホアプリエンジニアになって、まずは月50万円稼ぐ</li>
+<li>新しいサービスを作って世の中に広げたい<br>→ 半年以内にWEBサービスを作って、まずは1000人の人に利用してもらう</li>
+<li>より自由になりたい<br>→ ３ヶ月以内でフリーランスのWEBエンジニアになって、リモートで月30万円以上稼ぐ</li>
+<li>子育てしながらでも仕事をしたい<br>→ １ヶ月以内にHP制作で仕事を獲得し、月10万円以上稼ぐ</li>
+</ul>
+<p>あくまで一例ですので、あなた流にアレンジしてください。プログラミング学習はあなたの人生を豊かにするためのものです。どのような目的で、どのような目標を叶えるか？ワクワクしながら考えてみて頂ければと思います。</p>
+<p>もし、どうしても不安な方やイメージが湧かない方は弊社のサポート窓口までご相談ください。何かしらの形でお力になれればと思います。</p>
+<h2 id="-a-name-section2-3-step3-a-"><a name="section2-3">STEP3 プログラミングを学ぶ「教材」を決める</a></h2>
+<p>さてプログラミングを学ぶ目的目標が明確になったら、いよいよ、本格的にプログラミング学習の準備に入っていきます。まずは、学習の成否を決める「教材選定」です。</p>
+<h3 id="-">無数に有る教材から、あなたにあった教材を選ぶ必要性</h3>
+<p>プログラミングの学習教材は国内外問わず、日毎に増え続けています。また、通常一つの教材を単体で学習しても効果は限りがあります。最低でも２つ以上の教材を組み合わせることをおすすめします。そうすると、組み合わせの可能性は無限に近いほど広がってしまいます。</p>
+<p>プログラミング学習の成否は教材によって左右されるところが非常に大きいので、<strong>この無限の組み合わせから自分にあったものを選べるかが、プログラミング学習成功の鍵</strong> と言えます。</p>
+<p>ですが実際は、独学者が自分にあった教材やカリキュラムを自分で選ぶことはできません。ですので、多くの独学者が挫折してしまうのです。本書では独学でもこの問題を解決できるように教材選びのコツやおすすめ教材をご紹介していきます。</p>
+<h3 id="-">まずは言語選定</h3>
+<p>さっそく、おすすめの教材をご紹介していきたいのですが、その前に必要なことがあります。それは習得する<strong>「言語を選ぶ」</strong> ことです。至極当然のことですが、学ぶ対象が決まらなければ教材は決まりません。</p>
+<p>言語選びと言ってもどう選べば良いのか？と思うかもしれません。といっても言語選びは難しいものではなく、目的目標にあわせて、代表的な選択肢から選ぶだけです。</p>
+<p>また、メジャーな選択肢から選んでおけば、他の言語に乗り換えるのも難しくありません。人間の言語に例えるとわかりやすいですが、人間の言語の場合、国か違えば全く通じません。ですが、国をまたがなければ、訛りや方言が強くても何となく伝わるものです。プログラミング言語の違いはちょうどこの訛りや方言のようなものです。数週間程滞在していれば訛りに慣れてくるように、プログラミング言語の乗り換えも実はそれほど難しくありません。</p>
+<p>ここで、目標に合わせた代表的な言語をご紹介していきましょう。</p>
+<ul>
+<li>３ヶ月以内にスマホアプリエンジニアになって、まずは月50万円稼ぐ<br>→ SwiftもしくはJava</li>
+<li>半年以内にWEBサービスを作って、まずは1000人の人に利用してもらう<br>３ヶ月以内でフリーランスのWEBエンジニアになって、リモートで月30万円以上稼ぐ<br>→ HTML+CSS+Javascript + RubyもしくはPHP</li>
+<li>１ヶ月以内にHP制作で仕事を獲得し、月10万円以上稼ぐ<br>→ HTML+CSS+Javascript(+Wordpress)</li>
+</ul>
+<p>スマホアプリ開発はSwiftやJavaなどの言語を一つ身に付ければ可能になります。ですが、SwiftはiOS、Javaはアンドロイド専用アプリの開発となります。</p>
+<p>WEBに関してはHTML/CSS/Javascriptをベースに、HPを作る場合はWordpress、WEBアプリを作るときはRubyもしくはPHPを学ぶといいでしょう。WEBの場合学ぶ言語が多いのでボリューミーに感じるかもしれませんが、その分、応用範囲も広く様々なところで役立ちます。また、様々な仕事に関われるので仕事が取りやすかったりします。</p>
+<p>実はスマホアプリに関しても、WEBアプリを変換してスマホアプリにすることもできるので、HTML/CSS/Javascriptを学んでおけばWEB/iOS/Androidなど主要な動作環境をカバー出来ます。ですので、特にスマホアプリの最適化（ゲームのように高速な処理をしたいなど）を考えなければWEBベースのHTML/CSS/Javascriptから学ぶことをおすすめします。</p>
+<p>WEBアプリ、またはスマホアプリでもサーバーを介してユーザー同士のコミュニケーションをするものでは、サーバーサイド言語であるRubyやPHPなども使う必要があります。このサーバーサイド言語を選ぶのは正解がないので難しいのですが、当社ではRubyをおすすめしています。詳しくは弊社ブログの<a href="https://www.sejuku.net/blog/1502">こちらの記事</a>などを参考にしてください。</p>
+<h3 id="-">教材を選ぶコツ</h3>
+<p>さて、学ぶ言語は決まりましたでしょうか？学ぶ言語が決まれば、いよいよ教材選びです。ここでは、教材を選ぶ上で重要な点を解説していきます。</p>
+<p>まず重要なのが、大きく分けて２つの教材を分けて使うということです。その２つとは</p>
+<ol>
+<li><strong>まず、楽しく直感的に学べる「入門」教材で学ぶ</strong></li>
+<li><strong>次に、実践形式で基礎が身につく「実践型」教材で学ぶ</strong></li>
+</ol>
+<p>です。プログラミング学習は非常に多くの知識を覚えていく必要があります。ですが、<strong>いきなり多くを詰め込もうとすると、頭がパンクし、モチベーションをくじき、挫折しやすくなります。</strong></p>
+<p>そこで、まずは１の頭をあまり使わなくても学ぶことが出来る直感的な学習教材で<strong>プログラミングの楽しさを体感します。</strong> そうやってモチベーションと最低限の知識を高めた状態で、２の実践的な教材を解いていくのです。</p>
+<p>受験勉強でも２つ以上の教材をつかいましたよね？教科書のような非常に簡易でわかりやすい教材をまず授業でやり、その後参考書のような実践的な問題集を解いていく、そんなイメージに近いです。</p>
+<p>それでは１，２それぞれどの教材を使えばよいのでしょうか？</p>
+<h3 id="-">３つのおすすめ教材</h3>
+<p>これから紹介するおすすめの教材は初心者でもわかりやすく、実践的で、コスパに優れたもののみをご紹介します。実際に弊社の塾生や相談者の人たちに使っていただいているものになります。</p>
+<h4 id="1-">1. 楽しく直感的に学べる「入門」教材</h4>
+<p><a href="https://prog-8.com/">Progate | プログラミングの入門なら基礎から学べるProgate[プロゲート]</a><br>このProgateのいいところはインターネットさえ繋がっていれば、<strong>なんの準備もなくプログラミングの学習が始められる</strong> ことです。ブラウザ上で教科書を読んで問題に答えていく形式なのですが、教材が作りこまれていて直感的でわかりやすいのが特徴です。</p>
+<p>レベル制度があり、教材を進めるとどんどんランクが上がるので、それもモチベーションが上がるポイントになります。とにかく、<strong>プログラミングってどんな感じ？というのを楽しくつかむことが出来ます。</strong></p>
+<h4 id="2-">2. 実践形式で基礎が身につく「実践型」教材</h4>
+<p>各言語の実践型入門書
+Progateなどで、その言語の特徴を感覚的に掴んだあとは、入門書で基礎知識を身に着けていきます。ここでポイントなのは何かサンプルプログラムを実践的に作りながら学べる入門書を選ぶことです。</p>
+<p>目標であるHP制作やWEBアプリ、スマホアプリ開発を擬似体験できるような教材を選ぶことです。こちらに一例ですがおすすめの書籍を記載しておきます。</p>
+<ul>
+<li>iOSアプリが作りたい→Swiftを学ぶの場合<br>→ <a href="https://www.amazon.co.jp/%E6%9C%AC%E6%B0%97%E3%81%A7%E3%81%AF%E3%81%98%E3%82%81%E3%82%8BiPhone%E3%82%A2%E3%83%97%E3%83%AA%E4%BD%9C%E3%82%8A-Xcode-7-x%EF%BC%8BSwift-2-x%E5%AF%BE%E5%BF%9C-%E9%BB%92%E5%B8%AF%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%81%8C%E3%81%97%E3%81%A3%E3%81%8B%E3%82%8A%E6%95%99%E3%81%88%E3%82%8B%E5%9F%BA%E6%9C%AC%E3%83%86%E3%82%AF%E3%83%8B%E3%83%83%E3%82%AF-%E3%83%A4%E3%83%95%E3%83%BC%E9%BB%92%E5%B8%AF%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA-ebook/dp/B01C804DNO">本気ではじめるiPhoneアプリ作り Xcode 7.x+Swift 2.x対応 黒帯エンジニアがしっかり教える基本テクニック : 西磨翁</a></li>
+<li>HPが作りたい→HTML/CSS/Javascript/Wordpressを学ぶ場合<br>→ <a href="https://www.amazon.co.jp/WordPress-%E3%82%B7%E3%83%B3%E3%83%97%E3%83%AB%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB-%E3%82%AB%E3%83%95%E3%82%A7%E3%82%B5%E3%82%A4%E3%83%88-%E7%95%A0%E5%B1%B1-%E5%89%9B%E4%B8%80/dp/4797376481">WordPress シンプルスタイル カフェサイト おしゃれなお店のWebページを作ろう : 畠山 剛一</a></li>
+<li>WEBアプリが作りたい→HTML/CSS/Javascript/Rubyを学ぶ場合<br>→ <a href="https://www.amazon.co.jp/%E6%94%B9%E8%A8%823%E7%89%88%E5%9F%BA%E7%A4%8E-Ruby-Rails-IMPRESS-KISO/dp/4844338153">改訂3版基礎 Ruby on Rails : 黒田 努, 佐藤 和人, 株式会社オイアクス</a></li>
+</ul>
+<h4 id="-">ハイブリッド版教材</h4>
+<p><a href="http://dotinstall.com/">ドットインストール ### 3分動画でマスターする初心者向けプログラミング学習サイト</a><br>このドットインストールは1の入門教材と2の実践教材を合わせたような、<strong>非常に万能型な教材です。</strong> 動画を見て真似をする形式ですので、<strong>わからない言葉が出てきても直感的にすすめることが出来ます。</strong> また、実際にサンプルプログラムを手元で開発しながら学べるので、実践型教材としても活用できてしまいます。</p>
+<p>PCに比較的強く、プログラミングのセンスが多少あれば、これ一本でも学べる教材といえます。</p>
+<h4 id="-">おすすめの組み合わせ</h4>
+<p>まずはドットインストールを試してみてください。これがすんなり学べるようでしたらドットインストールで学ぶ言語の入門編をすべて学び、目標の作りたいものに合わせた入門書に移ります。</p>
+<p>ドットインストールで、少し躓くようでしたら、Progateを試しましょう。こちらは準備がまったくいらず、非常にわかりやすい教材ですので、学びたい言語のレッスンを全てこなしてからドットインストールへ進みましょう。ドットインストールでもレッスンを終えたあとに入門書へ移るようにしましょう。</p>
+<h3 id="-">ワーク</h3>
+<p>Progateとドットインストールをそれぞれ試してみましょう。例えばスマホアプリを開発したい方はSwiftかJavaかHTML&amp;CSS、WEB系の方はHTML&amp;CSSのレッスンを学んでみましょう。</p>
+<p>気負わず、プログラミングの楽しさを知るような気持ちで、気軽に試して見るのをおすすめ致します。</p>
+<h2 id="-a-name-section2-4-step4-a-"><a name="section2-4">STEP4 プログラミングを学ぶ「準備」をする</a></h2>
+<p>さて、いよいよ教材もきまり、学習開始！といきたいところですが、最後に必要な準備がいくつかあります。この準備に手間取り、多くの初学者が挫折してしまうのです。このステップではあなたが挫折せずスムーズにプログラミング学習をスタートするための準備をサポート致します。</p>
+<h3 id="-">学習を始める上で必要不可欠な３つの要素</h3>
+<p>プログラミング学習をする上で最低限必要な準備が３つあります。</p>
+<ol>
+<li>パソコンとネット環境</li>
+<li>テキストエディタ</li>
+<li>実行環境</li>
+</ol>
+<p>順を追って解説していきます。</p>
+<h3 id="-">パソコンとネット環境</h3>
+<p>プログラミングをする上でPCとネット環境は必須ですので、かなり前提の話ですが、実際にこれを持っていない初学者の方も多いです。また、パソコンは持っているけど古くて心配など、パソコンの買い換えも検討される方も多いです。ここではおすすめのパソコンとネット環境についてご紹介していきます。</p>
+<h4 id="-mac-book-">パソコンはできれば「Mac Book」</h4>
+<p>予算を特に低く抑えたいわけではなければ、Macbookを選びましょう！というのも、まずノートパソコンを選べばどこでも学習が出来ますし、仕事もできるようになります。またWindowsよりもMacがいい理由としては、iOSアプリやWEBアプリはMacのほうが開発しやすい（出来ることが多い）からです。詳しくは言及しませんが、<strong>プログラミングに関してはWindowsよりもMacのほうが得することが多いです。</strong></p>
+<h4 id="-wi-fi-">ネット環境はできればポケットWi-Fiを</h4>
+<p>ネット環境は自宅の固定回線でも良いのですが、それと併用してできればポケットWi-Fiをある時点で契約することをおすすめします。といいますのも、プログラミング学習を自宅だけでするのは集中力の関係であまりおすすめできません。</p>
+<p>会社帰りや休日にカフェなどで学習する機会が今後増えてくるでしょう。その際にカフェのWi-Fiだけに頼るのは速度的にもセキュリティ的にもあまりよろしくありません。ポケットWi-Fiがあれば、電車移動中でも、カフェでも、公園でも、どこでもプログラミングができるので非常におすすめです。</p>
+<h3 id="-">テキストエディタ</h3>
+<p>プログラムはソースコードというプログラミング言語で記述されたテキストを実行して動作します。そのソースコード（テキスト）を書くことをプログラミングと言います。</p>
+<p>つまりテキストを書くアプリが必要で、それがテキストエディタです。このテキストエディタは極論で言うともともとPCにインストールされているシンプルなテキストエディタでもいいのですが、これだと効率が悪いです。</p>
+<p>プログラミングの場合、多くの定型文やルールが存在します。その定型文やルールを識別してくれて、書く手間を減らしてくれる高機能なテキストエディタが存在し、それを使うことによって効率を上げることが出来るのです。</p>
+<p>でも高機能なテキストエディタって高いのでは？と思うかもしれません。実際に昔はそうでした。テキストエディタに数千円から1万円以上払うことはザラでした。ですが、今は無料なのに超高機能なテキストエディタがいくつか存在します。</p>
+<p>ここではその中でも特におすすめの「<a href="https://atom.io/">ATOM</a>」というテキストエディタをご紹介します。</p>
+<p>このATOMというテキストエディタは無料かつ高機能で、一番の特徴は「パッケージ」とよばれる拡張機能が使えることです。この「パッケージ」機能があることにより、実質ATOMの機能は無限大といえます。世界中のエンジニアが使い勝手を良くするために日々パッケージを開発してくれています。あなたはそのパッケージをあなたのATOMにインストールすることによって拡張することが出来るのです。</p>
+<p>もちろん拡張しなくても、十分高機能ですので安心してください。しかし、一つだけ注意点としては、海外のアプリなので英語の状態でインストールされるということです。これも、日本語化のパッケージを一つインストールするだけで解決されます。弊社ブログの<a href="https://www.sejuku.net/blog/450">こちらの記事</a>にて詳しく解説しておりますので参考にしてみてください。</p>
+<h3 id="-">実行環境</h3>
+<p>このステップ最後の準備は「実行環境」です。馴染みがない人には想像しづらいかもしれませんが、プログラミングは書いたコードを実行してプログラムを起動します。<strong>この時、予め実行するために必要なプログラムをインストールしておく必要があるのです。</strong></p>
+<p>この必要なプログラムというのは各言語によって違ってきます。例えば、HTML/CSS/Javascriptなどはブラウザがあれば実行出来ますので準備は必要ありません。逆に、Swiftで書いたプログラムを実行するにはXcodeというアプリをインストールする必要があります。</p>
+<p>実はこの実行環境をインストールするのが実は難しく、「初心者殺し」とも言える難関です。なぜなら、あなたのPCの環境に合わせてインストールの仕方が違ってくるからです。ですので、教材で紹介しているインストール方法などは一例でしかなく、その通りやってもうまくいかない可能性が高いのです。</p>
+<p>一番ポピュラーな解決方法としては「ググる」ことです。試しにGoogleで以下のようにググってみてください。</p>
+<p>「[あなたの学びたい言語名]　[あなたのPCのOS]　インストール」 </p>
+<p>例えば、あなたの学びたい言語がSwiftで、OSがMacだった場合は</p>
+<p>「Swift mac インストール」</p>
+<p>と調べて、幾つかの記事の中でわかりやすいものを選んでその通りやってみることです。</p>
+<p>しかし、この方法でもエラーなどが出て途中でうまくいかない場合があります。その際はエラーメッセージが吐き出されるはずなので、そのエラーメッセージをコピペしてググると解決します。</p>
+<p>とはいえ、実際半分以上の方が挫折するところでもありますので、もしうまくいかない場合の解決策を幾つか紹介しておきます。</p>
+<h4 id="-">質問サイトを使う</h4>
+<p>どうしても解決しない場合は<a href="https://teratail.com/">Teratail</a>や<a href="http://ja.stackoverflow.com/">スタックオーバーフロー</a>等のQ&amp;Aサイトを活用しましょう。質問するまえにまず、各サイトの検索窓でエラーメッセージや症状を検索してみます。それでも解決しない場合は質問を投稿すればだいたい親切に答えてもらえます。</p>
+<p>質問をする際には、早く質の高い回答をもらうためにも、各サイトで質問のうまい仕方やマナーなどは事前に調べることをおすすめします。</p>
+<h4 id="-">クラウド実行環境を使う</h4>
+<p>スマホアプリの開発の場合は<a href="https://ja.monaca.io/">Monaca</a>、WEBページやWEBアプリの場合は<a href="https://c9.io/">Cloud9</a>を活用すると、直接自分のPCに実行環境をインストールしなくても、ブラウザ上で開発をすることが出来てしまいます。</p>
+<p>通常は自分のPC上で自分で実行環境を整えてプログラムを実行するのですが、これらのサービスでは、それをクラウド上にあなた専用の実行環境を整えてもらい、その上でプログラムを実行するイメージです。</p>
+<p>これらの<strong>クラウドサービスをつかえば、通常数時間〜数日かかってしまう実行環境の準備を数分で完了してしまう事が出来ます。</strong> 実際に無数の初学者が実行環境のインストールでつまづき挫折しているので、これらのサービスは救世主と言えます。</p>
+<p>ですが、いくつかデメリットも有ります。Monacaの場合はSwiftやJavaはつかえず、あくまでWEBベース（HTML/CSS/Javascript)のスマホアプリしか作れません。またCloud9は環境が英語なので少しハードルがあります。また、両サービスともクラウド上で環境を用意するのでインターネット接続が必要で、速度が遅いと動作も重くなります。</p>
+<p>しかし、それらのデメリットをもってしても、全然お釣りが来る強力なサービスであることは間違いありません。</p>
+<h4 id="-">スクールや勉強会を使う</h4>
+<p>クラウドやQ&amp;Aに頼らず、自分のPCに実行環境をインストールしたい場合や、そもそも、何をインストールすれば良いのか調べてもわからない方はスクールや勉強会を活用しましょう。</p>
+<p>どちらも講師が、具体的に教えてくれて、うまくいかない時は手伝ってくれたり質問に答えてくれるでしょう。Googleでスクールや勉強会を探してみましょう。</p>
+<p>もちろん弊社でもマンツーマンで丁寧にサポートしたり、オンライングループでサポートしたりしていますので、お気軽にご相談ください。</p>
+<h2 id="-a-name-section2-5-step5-a-"><a name="section2-5">STEP5 プログラミングの「基礎」を固める</a></h2>
+<p>さて、いよいよ本格的なプログラミング学習が始まります。目的目標や教材が決まり、準備も完了し、ここからが本番です。教材を中心にプログラミングの基礎を身に着けていきます。</p>
+<h3 id="-">まずは教材の通り再現してみる</h3>
+<p>まずはじめに行うのはSTEP3で紹介した、Progateやドットインストールなどの入門教材です。Progateの場合はブラウザ上でそのまま打ち込み、ドットインストールの場合はテキストエディタやXcodeなどにコードを打ち込んで実行していきます。</p>
+<p><strong>こういう入門教材の学習のコツはとにかく写してみることです。</strong> 書籍と比べて、圧倒的に進めやすく、初心者でも割とさくさく進むかと思います。その分、理論的に理解したり、知識を覚えたりはしづらい特徴があります。</p>
+<p>ですので、<strong>体で覚える感覚で、教材を2,3周、繰り返すことをおすすめします。</strong> 仮に3回繰り返したとしても、書籍を一つやるより時間はかからないでしょう。終わった頃にはその言語を扱う感覚が身についています。</p>
+<h3 id="-">教材を段階に合わせてアップグレードする</h3>
+<p>次に重要なのは、STEP3でも紹介しましたが、よりレベルの高い教材に挑戦することです。あくまで入門教材は感覚をつかむためのものですので、書籍などの実践形式の入門教材をこなしましょう。</p>
+<p>こちらはProgateやドットインストールなどを経たことによって、多少わからない言葉や難しい概念がでてきたとしても理解することが出来ます。書籍などの実践教材を終えれば、一通りその言語の基本知識を抑えることが出来ます。</p>
+<h3 id="-">本当の基礎固めをするために「改造」をする</h3>
+<p>そしてこのステップで<strong>一番重要なポイントが、出来上がったサンプルを「改造」することです。</strong> サンプルとは、教材の指示通り出来上がったサンプルアプリのことです。こちらを改造していきます。</p>
+<p>最初は、変数の値を変えてみたり、レイアウトを変えてみたり、装飾してみたりというようなちょっとした工夫をしてみましょう。これだけでもただ写すことにくらべて、多くの事を学ぶことが出来ます。</p>
+<p>更にやっていただきたいのは、「機能追加」です。機能追加といってもどのような機能を追加すればよいのでしょうか？</p>
+<p>各教材のサンプルアプリは何か既存のアプリやサイトを真似たものになります。TodoアプリやTwitter、カフェのHPやブログ等です。ですので、「このアプリやサイトだったらこういう機能あるだろう」という「あるある」な機能を考えて追加していきます。</p>
+<p>そうすることによって、これまではただ写すだけでしたが、自分で調べてプログラムを書き、機能を追加していくことが出来るのです。これを繰り返せば、自分が作りたいものを作る実力がついていきます。</p>
+<p>それでは、どのようにして新しい機能を追加していけば良いのでしょうか？</p>
+<h3 id="-">プログラミング基礎サイクル</h3>
+<p><strong>「プログラマーなら誰でもやっている」そんな基本のサイクルがあります。</strong> このサイクルを活用して機能を追加していくことが出来ます。この基本サイクルは初心者でも超一流のエンジニアでも基本は同じで、違うのはこのサイクルを回した回数だけです。</p>
+<p>そのプログラミング基本サイクルとは以下の4つのプロセスを回すものです。</p>
+<ol>
+<li>定義</li>
+<li>調査</li>
+<li>実装</li>
+<li>修正</li>
+</ol>
+<p>順を追って見ていきましょう。</p>
+<h4 id="-">① 定義</h4>
+<p>定義のプロセスでは、作るもの、ここでは追加する「機能」を定義していきます。本来この定義は「設計」と呼ばれるような、作りなおしにならないように慎重に検討する作業が入ります。ですが、プログラミング学習者や、自分のアプリを趣味で作る段階ではこの設計は省いて考えて大丈夫です。</p>
+<p>今の段階では「画像を投稿できるようにしよう」「地図を表示するようにしよう」「画像スライダーを配置しよう」などざっくりでOKです。ここでのポイントは次のプロセスで検索出来るように、言葉にしておく事が重要です。</p>
+<h4 id="-">② 調査</h4>
+<p>調査のプロセスはその名の通り、定義した機能を実装する方法を調査していきます。調査と言っても難しいことは全く無く、Google等の検索エンジンで検索するだけです。</p>
+<p>実は、一流のエンジニアでも日々ググりまくってます。むしろ、エンジニアと言う職業はどの職業よりもググる回数が多いと思います。もちろん暗記した知識だけで書くこともありますが、細かい書き方や新しい機能の追加の仕方などはすぐにググるのがエンジニアです。</p>
+<p>そういう意味では、たくさんわからないことが出てきても全て暗記しなくても良いということですので、安心してください。</p>
+<p>話を元に戻して、調査の具体的な方法ですが、これも難しくはありません。検索バーに以下のように打ちこむだけです。</p>
+<p>「[言語名]　[バージョン番号]　[①で定義した機能を言語化したもの]」</p>
+<p>例）<br>「swift 2.0 googlemapで地図表示」<br>「ruby on rails 4.2 画像アップロード」<br>「HTML 固定メニュー」（HTMLの場合はバージョンを書かなくて大丈夫です）</p>
+<p>上の様に検索をすると、日本語でわかりやすく解説された個人ブログなどの記事を読むことが出来ます。多少慣れが必要ですが、慣れれば教材を写す感覚で、記事の指示に従い機能を追加することが出来るようになります。</p>
+<p>つまり、今までは出来合いの教材を写すだけでしたが、これからはインターネット上の無限の情報の中から、あなたにあった教材（記事）を組み合わせて、プログラムを機能拡張していくのです。</p>
+<h4 id="-">③ 実装</h4>
+<p>実装とは簡単に言うと「組み込むこと」を言います。あなたのプログラムに、新しい機能を組み込むことを実装と呼ぶわけです。</p>
+<p>といっても、難しいことではなく、②で調べた記事や文献を教材に、写していくことがメインになります。もちろん、適宜変更を加えなくてはならない箇所はありますので、できるだけ記事のサンプルコードを解読しながら移していきます。</p>
+<p>それでも、最初は全くなんのことかわからないと思いますので、ひとまずわからないところも写してみて、動くかどうかをためしてみると良いでしょう。</p>
+<h4 id="-">④ 修正</h4>
+<p>上記の③実装で、すんなりうまくプログラムが動作し、思ったような機能が追加されればよいですが、実際はその可能性は低いでしょう。大概の場合はエラーとなったり、思うように動かないこと多いです。</p>
+<p>そんな時に必要なのがこのプロセスの修正です。上記のような思うように動かないことを「不具合」と言います。よく「バグった」とか言いますよね。それと同じです。この不具合を修正するのがこのプロセスで行うことです。</p>
+<p>このプロセスでまずやるべきことは、エラーが出ているか？エラーが出ているとしたらエラーメッセージが出ているはずなので、そのエラーメッセージをコピーすることです。エラーメッセージを把握できればそれを検索エンジンにコピペして検索します。</p>
+<p>すると、あなたと同じエラーに躓いて解決した人たちが書いた記事や、質問掲示板でのやり取りなどが出てきます。そしてその情報を元に解決策を探して実施していくわけです。</p>
+<p>また、エラーとならず、エラーメッセージが表示されない場合は、先ほどの調べ方が出来ません。そんな時はもう一度③実装で活用した情報を見直し、写し間違いはないか？変更すべきところはないか？などを精査します。もし間違いがあればそこを修正していきます。</p>
+<p>それでも不具合が解消されない場合は、③実装で活用した情報の中に理解できてない箇所があるはずです。そういった箇所を検索で調べたり、書籍で調べていくことで理解をしていきます。すると、修正すべきコードの箇所が見えてくることがあります。</p>
+<h4 id="-">①〜④でうまくいかないとき</h4>
+<p>とはいっても、最初は中々思うとおりに機能を追加することが出来ないことも多いでしょう。ですが安心してください。どんなエンジニアも最初はそういうことを経験するのです。私自身も人生で何万回ググったかわからないくらい調べては挫折、調べては挫折を繰り返しています。</p>
+<p>何時間やってもうまくいかない時は諦めて、①からまたやり直しましょう。①の実装しようとする機能を変えてみたり、②の調べ方や参考にする情報を変えてみる。そうすると、意外とすんなり実装できたりします。</p>
+<p><strong>初学者が陥りやすい罠として、なかなか機能を実装できずつまづきすぎて、「自分ってセンスが無い」と思って諦めてしまうことです。</strong> こういう時に思い出して欲しいのは、最初は<strong>誰もがこの①~④の基本サイクルを行き来しながら、何回もつまづきながら、わずかに少しづつ機能が追加出来る</strong>のです。</p>
+<p><strong>中々思うようにいかなかった機能追加が、やっとの思いで実装できた時は鳥肌モノです。</strong> そして、基本サイクルを行ったり来たりしている間に、少しづつその言語の基礎や、プログラミングの基礎知識が身についていくのです。</p>
+<h3 id="-">挫折しないための３つのマインドセット</h3>
+<p>このSTEP5 基礎学習では挫折する方も多いかと思います。これまで1000人以上を直接指導してきて感じる、3つの重要なマインドセット（心の準備）をご紹介します。<strong>これらのマインドセットをしているのとしていないのだと、大きく成功率が変わってきます。</strong> プログラミング学習で挫折する人の多くがメンタルの問題でやめてしまうのでマインドセットが重要というわけです。</p>
+<h4 id="-">① 理解が不完全でも前に進む</h4>
+<p>プログラミング学習は新しい知識や概念がたくさんあります。すべてを理解しようとしていると、中々進めません。一つの分からない言葉を調べていたら、解説にわからない言葉が３つでてきて...と分からないことを調べるのにも切りが無かったりします。</p>
+<p>性格的にきっちりとした方の多くがハマりがちなのがこの罠です。きっちり一つ一つ理解して進みたいがために、いつまでたっても先に進めず諦めてしまう。理解するために調べることはもちろんいいことなのですが、「よくわからないけど、そういうものなんだ！」と大雑把に覚えることも大切です。中学校で公式を習うときにその公式の証明まで理解せずとも使えたはずです。それと同じだと考えて頂ければと思います。</p>
+<p>特に、直感的に学べる入門教材をやっているときは、大雑把な理解でスピーディーに進め、繰り返すことで、<strong>頭ではなく体で覚えることが出来ます。</strong> 一度で一気に理解しようとせず、不完全でも進む姿勢が重要となります。</p>
+<h4 id="-">② 不具合が出るのが当たり前</h4>
+<p>プログラミングを初めてする人は、思い通りに動かないことが多すぎて絶望しがちです。ですが、<strong>プログラミングは基本的にはトライ・アンド・エラーの繰り返しです。</strong></p>
+<p>経験を重ねたエンジニアでも、書いたコードが一発で思い通りに動作することは珍しかったりします。不具合は当たり前、いかに早く不具合をあぶり出して修正するか？それが勝負だったりします。</p>
+<p><strong>実はプロのエンジニアでもコードを書いている時間よりも調べている時間や不具合を修正している時間の方が長かったりします。</strong> ですので、決して不具合の連続でもあきらめないでください。あなたに才能がないわけではなく、プログラミングとは元来そういうものなのです。</p>
+<h4 id="-">③ 理解していない所を理解し、教材に戻る</h4>
+<p>「教材をただ写すだけで、プログラミングの基礎を理解し、覚えることが出来るのか？」そういう風に思うかもしれません。その疑問はその通りで、<strong>入門教材を写すだけでは基礎理解は出来ません。</strong> 実は、本当の基礎理解が進むのは、サンプルプログラムの改造や、次のステップの作品作りをするときなのです。</p>
+<p>プログラミングは暗記する「知識」ではなく実践する「技術」です。ですので、教材を写して知識を暗記するだけでは基礎理解や技術は身につきません。<strong>実際に自分で考えて書いていく中で基礎理解が深まり技術力が上がるのです。</strong></p>
+<p>ですので、教材を写すだけではなく、写した教材のサンプルを改造していくわけです。その際に、重要なのは、「基礎知識に立ち返る」ということです。</p>
+<p>改造をする中でわからないところに出くわしたら、過去にやった教材で基礎知識として紹介されていないか見直すのです。こういう時に書籍だと索引や目次などを使って、辞書のように調べられるので便利です。</p>
+<p>そうやって、<strong>「改造する→理解してないところを理解する→理解するため教材に戻る」をすると、格段に基礎理解が深まります。</strong> うまくいく人はこれを無意識的に行っています。逆に改造に入った時に自分の基礎理解の低さに落胆し挫折しないよう心がけましょう。</p>
+<h3 id="-">ワーク</h3>
+<ol>
+<li><p>まずはSTEP3で選んだ教材を一つやってみましょう。<br>※できるだけ進めやすいものを選んでください。また、頭で覚えようとしても難しい場合は繰り返して体に染み込ませましょう。</p>
+</li>
+<li><p>レベルを上げて、実践形式の入門書などの教材に移りましょう。<br>※詳細はSTEP3でご紹介しています。</p>
+</li>
+<li><p>実践形式の教材で出来上がった手元のサンプルをいろいろと改造してみましょう。<br>※最初はちょっとした変更を加えてどのように変化するのかを考察しましょう。次に、機能を3~5つほど追加してみましょう。</p>
+</li>
+<li><p>3.の途中で基礎で理解できていない箇所があれば教材に戻って基礎理解を深めます。<br>※必要に応じて検索もして理解を深めましょう。</p>
+</li>
+</ol>
+<h2 id="-a-name-section2-6-step6-a-"><a name="section2-6">STEP6 プログラミング習得のキモ、「作品」を作る</a></h2>
+<p>プログラミングの基礎が固まったら、作品を作り、プログラミングを使えるスキルにしましょう。前述のとおり作品が作れる力があれば、仕事もキャリアアップもスタートアップも可能となります。</p>
+<h3 id="-">作品作りをすることによって得られる３つのメリット</h3>
+<p>作品作りをすることの意味は大きく分けると3つあります。</p>
+<ul>
+<li>知識が技術に変わる</li>
+<li>作りたいものが作れるようになる</li>
+<li>技術力の証明になる</li>
+</ul>
+<p>それぞれ説明していきます。</p>
+<h4 id="-">知識が技術に変わる</h4>
+<p>STEP5では、プログラミングに必要な基礎知識を身につけました。ですが、これはあくまで知識であり、技術力といえるものはまだついていない状態です。知識と技術の差は何でしょう？</p>
+<p>それは「使えるか使えないか」です。知識を使って何かを成し遂げることができればそれは「使える」技術なのです。作品作りで0からアプリケーションを組み立てる事で、今まで学んできた知識を使い、技術に変わってきます。</p>
+<h4 id="-">作りたいものが作れるようになる</h4>
+<p>この「何か作ってみたい」というのがプログラミングを学ぶ動機の方もたくさんいらっしゃいます。そもそも、オリジナルの作品やサービスを作ることが、目的であり目標の方です。</p>
+<p>実際に作りたいものが作れるようになれば、これからの人生で様々なところで役立つことでしょう。仕事の中で問題に遭遇した時、それをシステマチックに解決する。何かを世の中に広めたいと思った時にホームページを作る。など、様々な応用範囲が広がります。</p>
+<h4 id="-">技術力の証明になる</h4>
+<p>エンジニアになりたい方、キャリアアップしたい方にはこれが非常に重要です。やはり、教材を一通りやっただけでは、即戦力として認めてもらうことは難しいです。逆に自分で考えたシステムを１から組み上げた経験があると、自己学習で技術を伸ばしていけるので、即戦力として認めてもらうことが出来ます。</p>
+<p>繰り返しになりますが、現代はエンジニアが大量に不足しています。この作品作りの領域さえ超えれば、引く手数多と言えるでしょう。</p>
+<h3 id="-">作品作りの基本３ステップ</h3>
+<p>といっても、いきなり作品を作り始めても、中々うまくいく人は少ないでしょう。<strong>「どこから手を付けていいかわからない」というのが正直なところかもしれません。</strong> ですが、安心してください。これからご紹介する3ステップを踏めば、だれでもオリジナルの作品を作ることが出来てしまいます。</p>
+<p>その３ステップとは非常にシンプルなものとなっております。</p>
+<ol>
+<li>企画</li>
+<li>設計</li>
+<li>開発</li>
+</ol>
+<p>実は、この３つのステップは特別なものではなく、システムを組んでいく時に、プロの現場でも当然行われているステップになります。（厳密にはテスト等の工程が入ってきますが、初学者にはハードルが高いのであえて抜いてあります）</p>
+<p>ステップを踏むごとに、より具体的なプロセスとなっています。逆に言えば、抽象的でざっくりとしたアイデアから考えていくということです。</p>
+<p>初学者の場合、この具体化のプロセスを１つ２つ飛ばしてしまうか、段差を超えられないため、挫折し易いです。例えば、「ラーメンマップアプリをつくろう！」と簡単な企画をするとします。この後２の設計を飛ばし、いきなり開発に行きがちです。そうすると「どっから手を付けていいかわからない」というふうになりがちです。</p>
+<p>それでは、３つのステップについて、１つずつ解説していきます。</p>
+<h3 id="-">① だれでもできる企画アイデア大量発想法</h3>
+<p>まずは、一番簡単なアイデア出しから始めていきます。これは既に作りたいもののイメージがあるかも知れません。そういった場合はこのステップを飛ばして、設計方法に行っても良いかもしれません。逆に、アイデアが特にない場合や、より多くのアイデアを出して絞りたい場合はこのステップをやってみてください。</p>
+<p>もちろん企画といえば、１冊の本でも納まりきらないほど、奥が深いテーマです。ですが、ここで言う作品の企画は非常にシンプルなもので良いです。というのも作品作りに関しては、いきなりすごいものを作るというよりも、「まずは一つ簡単なものを作って、プログラミングスキルをものにしよう」という意気込みのほうが成功しやすいからです。</p>
+<p>もちろん、作りこみを前提としてプロジェクトをスタートさせても良いのですが、最初の作品はカオスになりがちなので、練習を挟むことをおすすめしているからです。</p>
+<p>さて、余談となりましたが、シンプルな企画を考えるために、どのようにしたら良いのでしょうか？実は、だれでも、簡単に、アイデアを大量に発想する方法があります。それは以下の方程式を埋める思考法です。</p>
+<p>その方程式がこれです。</p>
+<p><strong>好きなもの（詳しいこと）× 既存のアプリ（サイト） = 新しいアイデア</strong></p>
+<p>例えば、Twitterはご存知かと思います。このTwitterとあなたの好きなモノを掛けあわせて考えてみます。仮にあなたが写真好きだとするとします。</p>
+<p>例）　写真　×　Twitter　=　写真版Twitter</p>
+<p>現在４億人以上が使っている「<a href="https://www.instagram.com/">Instagram</a>」という写真共有アプリはご存知でしょうか？まさに写真版Twitterと呼べるようなアプリです。このように、とても<strong>メジャーなサービスでも、何かしらの既存のサービスを一部真似して作られています。</strong> 何事もまずは真似から始まるのです。</p>
+<p>この発想法のコツとしては、既存のアプリやサイトを数多く触る事が重要かもしれません。もちろんメジャーなサービスだけでも良いですが、ぜひいろんなサービスに触れて発想の幅を広げると良いでしょう。</p>
+<h4 id="-">ワーク</h4>
+<p>「好きなもの × 既存のアプリ = 新しいアイデア」の方程式を活用してアイデアを最低３個出してみましょう。出せる人は３０個位だすと、革新的なアイデアが閃くかもしれません。ぜひお試しください。　</p>
+<h3 id="-">② 最も簡単な設計、ワイヤーフレーム</h3>
+<p>企画と同様、「設計」も非常に奥が深い分野です。世に言う上級エンジニアやSEと呼ばれる人はこの「設計」がメインの仕事だったりします。ですので多くの初学者がこの設計のステップで挫折するか、すっ飛ばしてしまいます。</p>
+<p>ここでは、本当に誰でも出来る、非常にシンプルかつ強力な設計方法を伝授いたします。その名も「ワイヤーフレーム」です。ワイヤーフレームはその名の通り「線で枠を書いたもの」です。なんの枠を描くのかというと、<strong>あなたの企画したアイデアの画面を想像して描くだけです。</strong></p>
+<p>やり方は簡単で、加味とペンを用意します。途中で消せるように消せるボールペンかシャーペンや鉛筆をおすすめします。そして、思いのまま想像のまま、画面をかき出してみるのです。そして、一つの画面を描き終えたら、別の画面を描きます。そのようにして、アプリやサイトの全体像を「見える化」していくのです。</p>
+<p>その際にコツとしては、｢何度も書きなおすこと」と「参考のアプリやサイトを真似すること」が重要です。設計は無駄なものと要るものを決める作業でもあるので、かき出してみて複雑すぎる場合はできるだけシンプルに書き直します。また、既存のアプリやサイトを参考にしてどんどん真似をしていいところを学びましょう。</p>
+<h4 id="-">ワーク</h4>
+<p>ステップ１で出した企画を紙に書き出してみましょう。何度書き直しながらアイデアを洗練させて行きます。この際に機能をできるだけシンプルにし、シンプルな画面、少ない画面数を目指しましょう。できれば、他人に見てもらって意見をもらうと更に改善点が見えてきます。</p>
+<h3 id="-">③ 基本サイクルを回して開発</h3>
+<p>さて、いよいよ、ワイヤーフレームまで落とし込んだアイデアを開発していきます。ここで「何から初めて良いかわからない」とつまづくパターンも非常に多いです。実際、このハードルが、プログラミング習得の一番のハードルといっても良いでしょう。どのように乗り越えたら良いでしょうか？</p>
+<p>その鍵は、ひとつ前のSTEP5「プログラミング基礎を固める」にありました。このSTEP5で最後にやる「改造」と、それによって身につく「プログラミング基本サイクル」これが突破口になります。</p>
+<p>どういうことかというと、ワイヤーフレームまで描き起こしたあとは、この「プログラミング基本サイクル」を１つずつ回して、設計した画面を作っていくだけでいいのです。</p>
+<p>例えば、企画ステップと同様にInstagramのようなサービスを思いついたとします。仮に、Instagramそっくりの画面をワイヤーフレーム化したとします。その次に行うのはプログラミング基本サイクルの１つ目である「定義」を行うのです。</p>
+<p>Instagramのメインの機能はざっくりと以下の様に考えられます。</p>
+<ul>
+<li>ユーザー登録機能</li>
+<li>写真アップロード機能</li>
+<li>タイムライン機能</li>
+<li>フォロー機能</li>
+</ul>
+<p>もちろん、もっと多くの機能が実際はありますが、これらのメインの機能があれば最低限動くシンプルな作品は作ることが出来ます。あとは１つずつ「調査」→「実装」→「修正」を行い、徐々に開発していけば一つの作品が作れてしまいます。</p>
+<p>お気づきかもしれませんが、このように、STEP5で<strong>「プログラミング基本サイクル」さえ身に着けていれば、オリジナル作品を作ることは難しいことではないのです。</strong></p>
+<p>もちろん、開発したい機能がマニアックなものだったり、複雑な場合は調査しても中々サンプルプログラムが見当たらず、頓挫することもありえます。そんな時は次の「オリジナル作品開発のコツ」を参考にしてください。</p>
+<h3 id="-">オリジナル作品開発のコツ</h3>
+<p>作品作りは、やり方はシンプルですが、実際何度もつまづき、挫折してしまう方も多いのが事実です。以下でご紹介する開発のコツを活用することによって挫折率を大きく下げることが出来ます。</p>
+<h4 id="-">サンプルプログラムを土台に企画を考える</h4>
+<p>もし、<strong>あなたの作りたいものにそっくりなサンプルプログラムを見つけることができれば、大幅に自分が書くコードを減らし、開発を容易にしてくれます。</strong> 私自身もゲームが作りたくてプログラミングを始めましたが、最初はサンプルプログラムの中から面白そうなものを見つけて、それをひたすら改造して作りたいものを作っていました。</p>
+<p>作品作りを乗り越えられるかどうかは、イメージと近いサンプルプログラムを見つけられるかにかかっています。思い切って、既存のアプリではなく、既存のサンプルプログラムと好きなモノを掛けあわせて企画を考えてみるのも一つの手です。</p>
+<h4 id="-">質問サイトを活用する</h4>
+<p>どうしても作りたいものがあって、自分で探したけど見つからない時は質問サイトを活用する手があります。あなたが検索ワードを思いつかないだけで、本当はほしいサンプルが存在することも少なくありません。</p>
+<p>あなたの実現したいことを丁寧かつ情熱をもって伝えて、力になってもらえるか聞いてみると良いでしょう。また、技術的な質問力はあらゆるところで役に立つスキルですので、回答数が多い質問などを見て特徴を学びましょう。</p>
+<h4 id="-">スクールを活用する</h4>
+<p>どんなに努力と知性をもって作品作りに励んでも、<strong>直接の助けがあるのと無いのだと最低２倍以上はスピードが違うでしょう。</strong> もしあなたの時間が限られているのであれば、直接助言がもらえるスクールを活用することをおすすめします。</p>
+<p>この時のポイントは、ただ教材をなぞるだけではなく、「オリジナルの作品作りをサポートしてくれるか？」ということです。弊社のようなマンツーマン形式の指導方法ではこれが可能ですが、教室型だと一人ひとりの質問に対応しきれず、正直難しいのが現状です。</p>
+<p>また、期間も1〜2ヶ月のように短いと、完成する前に卒業せざる負えなくなりますので、作品作りを目標にスクールを検討する際は3ヶ月以上の受講期間にするとより確実です。</p>
+<h3 id="-">過去の塾生の作品例</h3>
+<p>あくまで一部ですが、参考までに弊社の塾生の作品例を弊社ブログでご紹介いたします。企画や設計の参考になると思われますので、ぜひ目を通してみると良いと思います。
+<a href="https://www.sejuku.net/blog/4132">【たった3ヶ月でこんなの作れます】侍エンジニア塾、卒業生の作品を一挙大公開！オリジナルWEBアプリ4作品 | 侍エンジニア塾ブログ | プログラミング入門者向け学習情報サイト</a></p>
+<p>以上がプログラミング習得のキモ「作品作り」についてです。やることはシンプルですが、非常につまづくのも事実です。実際にやっていく中で不安になったり、なにか困ったことがあれば、弊社窓口までご相談ください。ご返答できる範囲でご相談に乗らせて頂きます。</p>
+<h2 id="-a-name-section2-7-step7-a-"><a name="section2-7">STEP7 プログラミングで稼ぐために「仕事」を獲得する</a></h2>
+<p>さぁいよいよ最後のステップ、仕事獲得です。このステップではここまでの６つのステップを踏んでいれば、どんな方でも仕事を獲得できる方法をお伝えします。</p>
+<p>エンジニアにならない場合でも、技術を磨くためだったり、副収入を得るために、サイドワークとしてスキマ時間で働くことも十分可能です。</p>
+<p>まずは、プログラミングを仕事にするメリットからお伝えしてきます。</p>
+<h3 id="-">エンジニアという仕事の３つの魅力</h3>
+<p>エンジニアという職業の魅力は大きく分類すると３つあると考えています。</p>
+<ol>
+<li>高収入と安定性</li>
+<li>働き方の自由</li>
+<li>広い応用範囲</li>
+</ol>
+<p>１つずつご説明しましょう。</p>
+<h4 id="-">高収入と安定性</h4>
+<p>冒頭でもお伝えしたとおり、IT技術者が深刻な人材不足です。プログラミングスキルやそれを専門職としたエンジニアは非常に求められています。</p>
+<p>冒頭でもお伝えしましたが、NHKの調査によると87%の企業が「IT技術者が足りない」と回答しています。また、リクルートワークス研究所によると、4年後の2020年には<strong>全就労人口の半数である「3098万人」がIT業界で働いている状態になると報じられています。</strong></p>
+<p>また、2016年4月時点で、IT技術職の求人倍率は3.29倍となっており、多職種に圧倒的差をつけており、<strong>企業が支払う平均時給は3000円をゆうに超えています。</strong> またフリーランスエンジニアの平均年収は、業種や言語によってバラつきがありますが、700万円～1200万円という調査もあり、需要が加速度的に増している現在ではこれも上がりつつあります。</p>
+<p>また、「安定性」というと違和感を覚えるかもしれませんが、どんなに安定した企業に努めたり公務員をやっていても、その組織に何かあれば真の意味での安定とはないと思います。ですが、「エンジニアリング」という高い専門性と手に職さえ持っていれば、グローバルで求められる人材になるので、仕事を獲得するスキルさえあればある意未安定性が高い職といえます。</p>
+<h4 id="-">働き方の自由</h4>
+<p>冒頭で解説しましたとおり、フリーランスエンジニアになることができれば様々な自由が広がります。</p>
+<ol>
+<li>経済の自由</li>
+<li>時間の自由</li>
+<li>表現の自由</li>
+<li>場所の自由</li>
+<li>人生の自由</li>
+</ol>
+<p>重複するのでここでは詳しくは書きませんが、<strong>フリーランスエンジニアはインターネットとノートパソコンが一台あれば、世界のどこでもいつでも仕事が出来てしまいます。</strong></p>
+<p>また、<strong>成果がコードで一目瞭然なこともあり、週1~3日だけでも働ける案件も非常に多いので、少ない時間はたらいてあとは自由に過ごしたり、副収入を得る手段としても非常に有効です。</strong></p>
+<h4 id="-">広い応用範囲</h4>
+<p>プログラミングスキルはエンジニアとして仕事に活かしても高い価値を発揮しますが、実は他にも様々な応用が出来ます。</p>
+<p>エンジニアにならずとも、現在の仕事に活かすことは出来ます。2020年までに全労働人口の半数がIT系になるのですから、今のあなたの仕事にもIT化が必要になるでしょう。そんな時にITの根幹であるプログラミングができると、IT技術全般に自然と明るくなり、様々な知見が身につきます。また、いま人が行っている労働の大半は自動化される時代がきていますので、あなたの仕事も自動化の余地があるでしょう。<strong>簡単なプログラムを書いて、１日かけていた作業を１分で行うことも出来ます。</strong></p>
+<p>また、<strong>今の時代のビジネス、特に会社を経営することや、商品を広げるマーケティングにプログラミングは欠かせません。</strong> プログラミングができれば１日で終るシステムでも、外注をすれば１ヶ月かかったり、数十万以上請求されることもあるでしょう。プログラミングを学ばないで支払うコストを考えるとビジネスマン必須のスキルと言えます。</p>
+<p>最後に、プログラミングスキルを高めることによって、結果的に論理的思考能力や問題解決力、情報処理能力やIT技術が自然と高まります。これらのスキルは相乗効果をおこして、あなたの生産性を飛躍的に向上させてくれます。<strong>総じて「本質的な問題を特定し、学習し、問題を解決する力」がつきますので、これからのあらゆるスキル学習、日頃ぶつかる問題解決を劇的に楽で楽しいものにしてくれるはずです。</strong></p>
+<h3 id="-">未経験でも仕事ができる４つの理由</h3>
+<p>こちらも冒頭で解説した内容と重複するので、詳しくは書きませんが、今の時代、未経験でも仕事は獲得することが出来ます。詳しくは第一章を御覧ください。</p>
+<ol>
+<li>圧倒的人材不足</li>
+<li>学習環境の変化</li>
+<li>ツールの充実</li>
+<li>プログラミングは実は文系の仕事</li>
+</ol>
+<p>ポイントになるのは、<strong>ステップ６でご紹介した「作品作り」です。この作品作りさえクリアしていれば、「自分で問題を解決して学習していける」ことが証明できるので仕事を獲得することが出来ます。</strong></p>
+<h3 id="1-">1週間で仕事獲得する方法【準備編】</h3>
+<p>さて、仕事を獲得していくわけですが、まずはいくつかの準備が必要です。</p>
+<ol>
+<li><strong>オリジナル作品を作って公開する</strong></li>
+<li><strong>理想の働き方（キャリア）を考える</strong></li>
+</ol>
+<p>まず一つ目のオリジナル作品については、繰り返しお伝えしている通り、これが仕事獲得のパスポートになります。ただ、年齢が若かったり、プログラミング経験がある場合は作品作りをしていなくても仕事が取れる場合も多いです。</p>
+<p>また、自ら知人経由などで営業したり、クラウドソーシングなどのツールを使って仕事を獲得する場合などは必ずしも、作品が必要ではありません。ですが、実際に仕事をとってから、しっかりと納品できるかどうかわからないので、一度はオリジナル作品を開発しておくことを勧めています。</p>
+<p>次に、理想の働き方について考えておくことも重要です。なぜならば、エンジニアの仕事内容やワークスタイルは多岐にわたり、実力さえ身に着けていけば、そのすべてが実現可能だからです。</p>
+<p>希望の年収や労働時間、常駐なのかリモート（在宅）なのか？、仕事内容はどんなものが良いのか？などです。いきなりリモートワークで年収1000万円は無理でも、１年目は正社員常駐で年収500万円、２年目はフリーランスのリモートワークで年収700万円、３年目に年収1000万円など、段階的にキャリアステップを描くと現実的です。</p>
+<p>以上2つの準備を行いましたらいよいよ仕事獲得です。３つの方法がありますので、それぞれ解説していきます。</p>
+<h3 id="1-">1週間で仕事獲得する方法その１【営業編】</h3>
+<p>ひとつ目の方法は営業で直接仕事を獲得する方法です。「営業」というと、ハードルが高く聞こえるかもしれませんが、<strong>ここでいう営業は「親戚や知り合いから依頼をもらってHPをつくる」なども入ってきます。</strong></p>
+<p>実際多くのエンジニアが、最初は知人経由のWEBページ制作案件などで仕事デビューしていることが多いのも事実です。私自身も簡単なHPづくりを親戚から依頼されエンジニアデビューをし、その後本格的なアプリ開発の案件を大学の先輩に紹介されWEBアプリエンジニアとしてデビューをしました。</p>
+<p>もちろん、自ら積極的に営業活動を行うのもいいでしょう。知人に自作の作品を見せて仕事を紹介してもらえるよう依頼したり、交流会などに出向いてHPやアプリを作りたい人を探すとすぐに見つかるでしょう。通常知人にエンジニアがいる人のほうが少ないです。あなたがエンジニアと名乗れば自然に相談や仕事が舞い込むようになります。</p>
+<h3 id="1-">1週間で仕事獲得する方法その２【転職編】</h3>
+<p>もう一つポピュラーな仕事獲得の方法は「転職」です。転職と言っても、新卒採用や第２新卒等、アルバイトやインターン等の非正規雇用も含めてご紹介します。</p>
+<p>この転職は通常の大手転職・就活サイトやハローワークなど使うことも可能ですが、私達がおすすめしている仕事獲得ツールは少し従来とは違ったものとなります。ここでは３つご紹介していきます。</p>
+<h4 id="wantedly">Wantedly</h4>
+<p>この<a href="https://www.wantedly.com/projects">Wantedly</a>のコンセプトは『はたらくを面白くするビジネスSNS』というもので、最大の特徴は『人』を中心にしたマッチングを重視していることです。</p>
+<p>通常の転職サイトでは仕事の条件や働く側の実績を重視してマッチングが行われますが、Wantedlyの場合は仕事の条件だけではなく『何をやっているのか？なぜやっているのか？どうやっているのか？』という『どういう想いを持った人がどのように働いているのか？』が伝わる募集要項になっています。</p>
+<p>また、<strong>いきなり応募というのではなく、『話を聞きたい』ボタンを押すと、企業側があなたのプロフィールをみて興味を持ってくれたら面談というシステムも特徴的です。</strong> あくまで面接というよりも、フランクに話を聞きに行くというニュアンスですので、転職活動特有の堅苦しさがなく気軽に働きたい会社を探すことが出来ます。</p>
+<p><strong>また、ベンチャー企業が多く募集を投稿しているので、比較的技術的ハードルが低いのも特徴です。</strong> 雇用形態も多様で「新卒・アルバイト・インターン・中途・社会人バイト・契約・委託」ほぼすべての形態をカバーしています。</p>
+<p><strong>このWantedlyが一番応募の精神的ハードルも、求められる技術的ハードルも低いので最初の仕事獲得ツールとしてはおすすめです。</strong></p>
+<h4 id="-">レバテック</h4>
+<p><a href="https://levtech.jp/">レバテック</a>の特徴は応募数の多さと、丁寧なヒアリング体制です。実務未経験でも、独学をして作品を作っていれば、あなたに合う会社を個別ヒアリング後提案してくれます。個別ヒアリングは技術にも詳しいテクニカルカウンセラーが対応してくれるので安心です。</p>
+<p>また、高額な案件が多いのも特徴ですので、<strong>実務経験を詰めば、年収1000万円以上の案件も紹介される可能性があるのも魅力です。</strong> 常駐業務が基本とはなりますが、雇用形態などは選べるので、希望にあった働き方が選べます。</p>
+<h4 id="-">ポテパン</h4>
+<p><a href="https://freelance.potepan.com/">ポテパン</a>は初心者向けのフリーランス案件紹介サイトです。キャリアコンサルタントや税理士、フィナンシャルプランナーなどが、応募者の独立を支援してくれます。</p>
+<p><strong>初心者向けの案件数も多く、他の紹介サイトに比べて、未経験でも仕事が取りやすいのが特徴です。無料で相談ができるので、独立に必要なことを聞くだけでも価値があります。</strong></p>
+<p><br>
+以上、上記３つ以外にも、エンジニアの転職サイトは多数存在します。それらの募集を合わせれば常時数万規模でエンジニアが求められています。気軽に話を聞きに行ったり、相談できるサービスが最近は非常に多いです。作品作りを終えて学習の成果を見える化しておけば必ず仕事は獲得出来ますので、ぜひご活用ください。</p>
+<h3 id="1-">1週間で仕事獲得する方法その３【クラウドソーシング編】</h3>
+<p>最後に、クラウドソーシングという方法をご紹介します。ご存知かもしれませんが、クラウドソーシングとは、インターネット上で仕事の受注と発注を仲介するサービスで近年利用者が増え続けています。</p>
+<p><strong>クラウドソーシングの市場規模は国内で2017年に1700億円になると言われており、大企業や官公庁も次々と仕事を発注し始めています。</strong> 特徴としては募集されている案件の大半がリモートワーク（在宅）を前提としており、まさにインターネット上で仕事をするイメージです。</p>
+<p><strong>案件数が非常に多いのも特徴で、</strong> 例えば大手の<a href="https://crowdworks.jp/public/jobs/group/development">「クラウドワークス」</a>での「システム開発」の案件数は常時１万件以上あります。もう一つ案件数が多い<a href="http://www.lancers.jp/work/search/system">「ランサーズ」</a>でも7000件以上となっております。</p>
+<p>簡単なWEB制作やデザインの案件数はその倍以上ありますので、まずはそういった案件をこなして実績を作っていくのもおすすめです。</p>
+<p>クラウドソーシングの特徴は働く側も単価を提案できるので、経験や応募状況に応じて高額な案件を取ることも出来ますし、逆に安い単価で提案して未経験でも確実に案件をとることが出来ます。</p>
+<p>おすすめは、いきなり数十万円以上の案件をとるのではなく、時給制で働ける案件です。なぜならば、本当にその案件が技術的にこなせるかわからないですし、仕事の仕方や人間同士ですので相性がどうしてもあるからです。</p>
+<p>まずは時給制で比較的簡単そうな案件に提案をして、テストワーク感覚でフリーランスデビューしてみるのもいいでしょう。</p>
+<h3 id="-">よくある失敗パターン</h3>
+<p>以上、３つの仕事獲得アプローチをご紹介しました。実際にご自身の目で紹介したサイトなどを調べて頂ければ、本当に多くの案件が転がっていることに気づくと思います。まさに今の技術者不足を反映しています。</p>
+<p>基本的に独学でも自力で何か作品を作れるところまで行っていれば、簡単な案件は学習しながらこなせますし、それを企業側もわかっているので、仕事をくれます。</p>
+<p>また、クラウドソーシングなどは技術的知識がない人や企業も多く発注していますので、そもそもあなたのスキルとは直接関係がなく仕事を取ること自体は可能です。</p>
+<p>ですが、不思議な事に「仕事が取れない」と相談をいただくケースがまれにあります。そういう場合の多くはアプローチを変えるだけですぐに仕事が取れてしまいます。幾つかよくある仕事が取れないパターンとその対策をまとめておきます。</p>
+<h4 id="-">そもそも数が足りない</h4>
+<p>一つ目がそもそもアプローチの数が足りない場合です。あなたが若くて、独学でも素晴らしい作品を作れたとしたら仕事を取れる確率はかなり高いです。ですがそうでない場合それなりの確率で断られます。</p>
+<p>ですが、それはそもそも当然のことなので落ち込まないことが非常に重要です。10社は最低でもアプローチしてみて、それでもダメなら、別のサイトや方法を使ってまた10社アプローチしてみましょう。それでも仕事が取れなかった方に私は今まであったことがありません。</p>
+<p>紹介しただけでもアプローチの方法は3つあって、それぞれのアプローチで使う媒体は数種類から数樹種類、その媒体が持っている案件数は数千から数万件あるので、<strong>あなたがチャレンジできる選択肢はほぼ無限といえます。</strong></p>
+<p><strong>あなたにあったサイトやアプローチを見つけられれば2,3社当たるだけで仕事が取れることも多いです。</strong></p>
+<h4 id="-">年齢がネック</h4>
+<p>もしあなたの年齢が50代以上だった場合、正社員で雇ってもらえる可能性は低いです。今の日本の雇用常識で言えば当然ですので、しょうがない事といえます。ですが、逆にフリーランスであれば可能性はあります。</p>
+<p>正社員に比べれば企業側も業務委託やアルバイトの方がリスクが少ないので、思い切って試しに雇いやすいです。また、クラウドソーシングになれば、年齢を気にする企業も直接雇用に比べて少なくなります。</p>
+<p>実績が多少なりともあればその傾向はより強くなります。まずはタダ同然でもいいので、簡単なWEB制作やシステム開発案件を受注して、実績を作ることから初めて見てはいかがでしょうか？</p>
+<p><strong>実際に塾生で60代にも関わらずクラウドソーシングで稼ぐ方はいらっしゃいますので、諦めずにトライしましょう。</strong></p>
+<h4 id="-">コミュニケーションがネック</h4>
+<p>コミュニケーションに自信がない、上手く自分のことをアピール出来ないという方も多いかと思います。こういう方は実際に企業の担当者と対面で話すとなると緊張して上手く話せないかと思います。その場合、面接で落とされてしまうのもこれまた仕方がない事といえるでしょう。</p>
+<p>ですが、こちらに関してもクラウドソーシングであれば、メールオンリーの場合も多いですし、Skypeなどの電話であれば、直接対面するわけではないので緊張が緩和されます。</p>
+<p>また、「仕事さえしてくれれば相手のことは気にしない」というある意味ドライな商習慣がクラウドソーシング上ではありますので、あまりあなたがどんな性格でどんなバックボーンを持っていたとしても気にしない場合が多いです。</p>
+<p>案件数は無限といえますので、コミュニケーションや年齢がネックでもそれを気にしない相手を選べば十分仕事をとることが出来ます。</p>
+<h4 id="-">自分自身で制限している</h4>
+<p>一番多いパターンはこれです。上記３つの理由に繋がるところでもありますが「◯◯だから自分に仕事なんかとれるはずがない」と自らブレーキを掛けてしまうパターンです。</p>
+<p>このパターンの厄介なところは、そのように思い込むことにより、行動を辞める理由をつくり、諦め、実際に仕事が取れない現実を生み出してしまう事にあります。</p>
+<p><strong>常時何万件も仕事があるので、そのすべてが自分にふさわしくないなんてことが有るはずがありません。</strong> まずは数をうってみましょう。実際にはあなたが思っているよりも遥かに簡単に仕事はとれてしまいます。</p>
+<h3 id="-">仕事獲得後のキャリアアップ法</h3>
+<p><strong>上述しましたとおり、仕事を獲得すること自体は簡単です。本当の勝負は最初の仕事を獲得した先にあります。</strong></p>
+<p>それはいかに、<strong>自分の技術力と単価を高めるかです。言い換えると「いかに生産性と市場価値を高めるか」ということです。</strong> あなたの生産性と市場価値が上がれば、年収が1000万円を超えたり、週2日だけ働いてあとは自由など、<strong>年収や自由度が上がります。</strong></p>
+<p>ここで私達がおすすめしている方法は複数の案件を掛け持ちするという方法です。</p>
+<p>最初の半年や1年間は一つの案件に集中するのもいいと思います。また、運良く技術力が高くて先輩エンジニアにもフランクに頼れる良い環境に出会えたりしたらそれもまたいいでしょう。そうでない場合は、仕事に慣れてきたところで「掛け持ち」をして自分の幅を広げることをおすすめします。</p>
+<p>複数の案件を掛け持ちしていれば、その分、多くの技術や知見を学ぶ事が出来ます。前述のとおりフリーランスエンジニアは成果が明確なためフルタイムでなくとも仕事を取ることが出来ます。A社は週2、B社は週2、C社は週1稼働という風に働いている方もいらっしゃいます。</p>
+<p>また、複数の案件を持っていれば、企業との交渉力も自然と高まります。「別の会社とはこの条件でやってます」などの提案がしやすくなるのです。これにより、あなたの市場価値は相対的に高まりますので、単価が上がり年収が上がりやすくなります。</p>
+<p>現実的なプランとしては、1年目は一つの企業でフルタイム出勤し技術を磨き、その分野で一通りのことがわかってきたら、週末の時間を使って2社目の企業を手伝う。その後、1社目の企業に交渉して稼働時間や単価を交渉していくなどです。</p>
+<h3 id="-">ワーク</h3>
+<ol>
+<li>STEP6で作ったオリジナル作品をネット上で公開する</li>
+<li>理想の働き方とキャリアパスを描く</li>
+<li>３つのアプローチを一通り試してみて、自分にあった仕事を見つける</li>
+</ol>
+<p>仕事獲得に関しては、オリジナル作品さえあればそれほど心配しなくて良いでしょう。<strong>実際速い人では３日ほど、時間がかかる人でも２週間ほど仕事を探せば見つかることがほとんどです。</strong></p>
+<p>転職や就活のように気重に考えるのではなく、まずは話を聞きに行くくらいの気持ちでいろいろと情報収集してみてはいかがでしょうか？</p>
+<hr>
+<p>ここまでご紹介してきた7ステップを活用すれば、未経験でも短期間でエンジニアとして転職したり、フリーランスエンジニアとして独立することが出来てしまいます。</p>
+<p>ハードルが高いと感じた方は、比較的簡単なWEB制作をまず学習し、クラウドソーシングやWantedlyを使い仕事を獲得しましょう。人にもよりますが、最短2週間~最長でも2ヶ月以内には最初の仕事を見つけることが出来るでしょう。</p>
+<p>もちろんシステム開発やWEBアプリ開発、スマホアプリ開発の場合でも通常3~6ヶ月ほど学習すれば、作れるようになれますし、仕事獲得することも出来ます。</p>
+<h1 id="-a-name-section3-a-"><a name="section3">最後に</a></h1>
+<p>ここまで繰り返してご説明してきましたが、プログラミングスキルは今非常に求められていますし、今後必須になっていくことは間違いないかと思います。そんなスキルを数ヶ月で学べて、人生をより豊かで自由にしていくことが出来るのです。</p>
+<p>この7ステップが少しでもあなたのプログラミング学習の助けになれば幸いです。最後までお読みいただきまして、誠にありがとうございました。</p>
+<p>また、詳しい解説や各種相談、サービス利用に関しては侍エンジニア塾までご相談頂ければ、スタッフ一同誠意を持って対応させていただきます。</p>
+<p>2016年6月9日</p>
+<p>木内翔大</p>
+<h1 id="happy-hacking-">Happy hacking !</h1>
+<h2 id="-a-name-profile-a-"><a name="profile">著者プロフィール</a></h2>
+<p>木内 翔大</p>
+<p>株式会社 侍 代表取締役CEO</p>
+<p>東京都多摩市出身</p>
+<p>小学5年生でゲーム創るためにプログラミングをはじめる<br>19歳でフリーランスエンジニア<br>22歳で日本初のプログラミングマンツーマン教育サービスで起業</p>
+<p>『より自由で豊かな人々が増える仕組みを創る』
+をミッションに複数の教育事業に取り組む</p>
+<p>フリーランスエンジニアを育てる
+&quot;侍エンジニア塾&quot;の経営
+<a href="javascript:void();" onCLick="if (!window.__cfRLUnblockHandlers) return false; lp_link();" data-cf-modified-b5521693b6680881e335190e-="">https://www.sejuku.net/</a></p>
+<p>これまで100名以上の個人事業主を輩出
+指導実績数は7000名以上</p>
+<hr>
+<p><a href="javascript:void();" onCLick="if (!window.__cfRLUnblockHandlers) return false; lp_link();" data-cf-modified-b5521693b6680881e335190e-="">© 2016 株式会社 侍</a></p><script src="https://ajax.cloudflare.com/cdn-cgi/scripts/a2bd7673/cloudflare-static/rocket-loader.min.js" data-cf-settings="b5521693b6680881e335190e-|49" defer=""></script></body>
 </html>
